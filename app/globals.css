@@ -363,6 +363,29 @@ body {
   color-scheme: dark;
 }
 
+/* Picture-book frame: native 3:2 artwork, never cropped, shrinks to fit viewport */
+.story-illustration-frame {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  max-width: 100%;
+  max-height: min(48dvh, 36rem);
+  width: min(100%, calc(min(48dvh, 36rem) * 1.5));
+}
+
+@media (min-width: 768px) {
+  .story-illustration-frame {
+    max-height: min(54dvh, 40rem);
+    width: min(100%, calc(min(54dvh, 40rem) * 1.5));
+  }
+}
+
+@media (min-width: 1024px) {
+  .story-illustration-frame {
+    max-height: min(58dvh, 42rem);
+    width: min(100%, calc(min(58dvh, 42rem) * 1.5));
+  }
+}
+
 @keyframes treasure-wiggle {
   0%,
   100% {

@@ -80,6 +80,7 @@ export function earnSticker(sticker: StickerDefinition): EarnedSticker | null {
 
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify([...existing, earned]));
+    window.dispatchEvent(new Event("adventurebox-stickers-updated"));
   } catch {
     return earned;
   }

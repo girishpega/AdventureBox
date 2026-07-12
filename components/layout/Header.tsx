@@ -44,6 +44,12 @@ export function Header() {
               Stories
             </Link>
             <Link
+              href="/#stories"
+              className="hidden text-sm font-semibold text-text-secondary transition-colors hover:text-brand-primary lg:inline"
+            >
+              Ellie Stories
+            </Link>
+            <Link
               href="/#themes"
               className="hidden text-sm font-semibold text-text-secondary transition-colors hover:text-brand-primary lg:inline"
             >

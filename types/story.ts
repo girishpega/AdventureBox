@@ -1,7 +1,5 @@
 export interface StoryPage {
-  id: string;
   text: string;
-  illustrationDescription: string;
   interaction?: {
     prompt: string;
     buttonLabel: string;
@@ -10,39 +8,37 @@ export interface StoryPage {
 }
 
 export interface StorySticker {
-  emoji: string;
   label: string;
   description: string;
 }
 
-export interface PictureBook {
-  slug: string;
+export interface StoryBundleData {
   title: string;
-  emoji: string;
-  subtitle?: string;
-  ageRange: string;
+  age: string;
   readingMinutes: number;
-  coverIllustrationDescription: string;
+  collection: string;
+  hero: string;
   endMessage?: string;
   sticker?: StorySticker;
-  theme: {
-    primary: string;
-    secondary: string;
-    accent: string;
-    background: string;
-    night: string;
-  };
   pages: StoryPage[];
+}
+
+export interface StoryBundle extends StoryBundleData {
+  slug: string;
+  published: boolean;
+  hasStickerArt: boolean;
 }
 
 export interface StorySummary {
   slug: string;
   title: string;
-  emoji: string;
-  subtitle?: string;
-  ageRange: string;
+  age: string;
   readingMinutes: number;
-  coverIllustrationDescription: string;
-  theme: PictureBook["theme"];
+  collection: string;
+  hero: string;
   pageCount: number;
+  published: boolean;
 }
+
+/** @deprecated Use StoryBundle */
+export type PictureBook = StoryBundle;

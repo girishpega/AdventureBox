@@ -1,0 +1,15 @@
+{
+  "title": "Pip and the Sleepy Star Parade",
+  "age": "4–6",
+  "readingMinutes": 3,
+  "collection": "pip",
+  "hero": "pip",
+  "endMessage": "Sweet dreams.",
+  "pages": [
+    { "text": "The stars were asleep." },
+    { "text": "Pip knew what to do." },
+    { "text": "Shhh…" },
+    { "text": "Look!" },
+    { "text": "Sweet dreams." }
+  ]
+}

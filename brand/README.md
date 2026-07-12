@@ -2,7 +2,7 @@
 
 **Creative Direction Package · v1.0**
 
-> **MVP Update:** Official launch character is **Ellie only**. See [`/focus-sprint/`](../focus-sprint/) for production artwork, character sheet, and visual mood board. Finn, Nova, Sage → [Future Ideas](../focus-sprint/FUTURE_IDEAS.md).
+> **MVP Update:** Official launch character is **Ellie only**. See [`/studio/`](../studio/) for creative workspace, character sheet, and visual mood board. Finn, Nova, Sage → [Future Ideas](../studio/FUTURE_IDEAS.md).
 
 ---
 

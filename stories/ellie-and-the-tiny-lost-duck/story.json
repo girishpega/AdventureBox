@@ -1,0 +1,34 @@
+{
+  "title": "Ellie and the Tiny Lost Duck",
+  "age": "4–6",
+  "readingMinutes": 3,
+  "collection": "ellie",
+  "hero": "ellie",
+  "endMessage": "Quack yeah!",
+  "sticker": {
+    "label": "Ducky Friend",
+    "description": "You helped Ellie find her tiny friend!"
+  },
+  "pages": [
+    {
+      "text": "Ellie heard a peep."
+    },
+    {
+      "text": "Someone was lost."
+    },
+    {
+      "text": "Where are you?",
+      "interaction": {
+        "prompt": "Tap to help Ellie look!",
+        "buttonLabel": "Look! 👀",
+        "revealText": "Peep!"
+      }
+    },
+    {
+      "text": "It was in her trunk!"
+    },
+    {
+      "text": "Best friends!"
+    }
+  ]
+}

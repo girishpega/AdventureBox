@@ -1,35 +1,54 @@
 "use client";
 
 import Link from "next/link";
-import type { PictureBook } from "@/types/story";
+import Image from "next/image";
+import { READER_THEME, stickerUrl } from "@/lib/storyAssets";
+import type { StoryBundle } from "@/types/story";
 
 interface StoryEndScreenProps {
-  story: PictureBook;
+  story: StoryBundle;
   onReadAgain: () => void;
 }
 
 export function StoryEndScreen({ story, onReadAgain }: StoryEndScreenProps) {
-  const { theme, sticker, endMessage } = story;
+  const { sticker, endMessage } = story;
+  const showStickerImage = story.hasStickerArt;
 
   return (
     <div
       className="story-reader relative flex min-h-[100dvh] flex-col items-center justify-center px-6 text-center"
-      style={{ backgroundColor: theme.night }}
+      style={{ backgroundColor: READER_THEME.night }}
     >
       <div
         className="pointer-events-none absolute inset-0 opacity-40"
         style={{
-          background: `radial-gradient(ellipse at 50% 40%, ${theme.primary}44 0%, transparent 60%)`,
+          background: `radial-gradient(ellipse at 50% 40%, ${READER_THEME.primary}44 0%, transparent 60%)`,
         }}
       />
 
       <div className="relative z-10 story-end-enter max-w-lg">
         {sticker ? (
-          <div className="animate-sticker-pop mx-auto mb-6 max-w-xs rounded-2xl border-4 border-dashed bg-white/95 p-6 shadow-[0_16px_48px_rgba(0,0,0,0.3)]" style={{ borderColor: theme.accent }}>
+          <div
+            className="animate-sticker-pop mx-auto mb-6 max-w-xs rounded-2xl border-4 border-dashed bg-white/95 p-6 shadow-[0_16px_48px_rgba(0,0,0,0.3)]"
+            style={{ borderColor: READER_THEME.accent }}
+          >
             <p className="text-xs font-bold uppercase tracking-widest text-text-muted">
               ✨ New Sticker! ✨
             </p>
-            <div className="my-3 text-6xl">{sticker.emoji}</div>
+            {showStickerImage ? (
+              <div className="relative mx-auto my-3 h-24 w-24">
+                <Image
+                  src={stickerUrl(story.slug)}
+                  alt={sticker.label}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            ) : (
+              <span className="my-3 block text-6xl" aria-hidden="true">
+                ✨
+              </span>
+            )}
             <h3 className="font-[family-name:var(--font-fredoka)] text-xl font-bold text-text-primary">
               {sticker.label}
             </h3>
@@ -45,7 +64,10 @@ export function StoryEndScreen({ story, onReadAgain }: StoryEndScreenProps) {
           The End
         </h2>
 
-        <p className="mb-8 font-[family-name:var(--font-fredoka)] text-2xl sm:text-3xl" style={{ color: theme.accent }}>
+        <p
+          className="mb-8 font-[family-name:var(--font-fredoka)] text-2xl sm:text-3xl"
+          style={{ color: READER_THEME.accent }}
+        >
           {endMessage ?? "Sweet dreams."}
         </p>
 
@@ -58,7 +80,7 @@ export function StoryEndScreen({ story, onReadAgain }: StoryEndScreenProps) {
             type="button"
             onClick={onReadAgain}
             className="flex h-14 min-w-[220px] items-center justify-center rounded-full text-lg font-bold shadow-[0_8px_32px_rgba(0,0,0,0.25)] transition-all hover:scale-[1.03] active:scale-[0.97] sm:h-16 sm:min-w-[240px] sm:text-xl"
-            style={{ backgroundColor: theme.accent, color: theme.night }}
+            style={{ backgroundColor: READER_THEME.accent, color: READER_THEME.night }}
           >
             Read Again ✨
           </button>

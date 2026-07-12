@@ -1,12 +1,13 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import type { PictureBook } from "@/types/story";
+import { READER_THEME } from "@/lib/storyAssets";
+import type { StoryBundle } from "@/types/story";
 import { StoryEndScreen } from "./StoryEndScreen";
 import { StoryPageView } from "./StoryPageView";
 
 interface StoryReaderProps {
-  story: PictureBook;
+  story: StoryBundle;
 }
 
 export function StoryReader({ story }: StoryReaderProps) {
@@ -18,6 +19,7 @@ export function StoryReader({ story }: StoryReaderProps) {
   const isComplete = currentPage >= totalPages;
   const page = story.pages[currentPage];
   const needsInteraction = Boolean(page?.interaction) && !interactionRevealed;
+  const theme = READER_THEME;
 
   const goNext = useCallback(() => {
     if (isTransitioning || currentPage >= totalPages || needsInteraction) return;
@@ -72,11 +74,10 @@ export function StoryReader({ story }: StoryReaderProps) {
 
   const isFirstPage = currentPage === 0;
   const isLastPage = currentPage === totalPages - 1;
-  const { theme } = story;
 
   return (
     <div
-      className="story-reader relative flex min-h-[100dvh] flex-col"
+      className="story-reader relative flex h-[100dvh] flex-col overflow-hidden"
       style={{ backgroundColor: theme.night }}
     >
       <div
@@ -92,7 +93,7 @@ export function StoryReader({ story }: StoryReaderProps) {
         }}
       />
 
-      <div className="relative z-10 flex flex-1 flex-col">
+      <div className="relative z-10 flex min-h-0 flex-1 flex-col">
         <StoryPageView
           page={page}
           pageIndex={currentPage}
@@ -105,7 +106,7 @@ export function StoryReader({ story }: StoryReaderProps) {
           onInteraction={handleInteraction}
         />
 
-        <div className="flex shrink-0 flex-col items-center gap-5 px-6 pb-8 pt-2 sm:pb-10">
+        <div className="flex shrink-0 flex-col items-center gap-3 px-6 pb-5 pt-1 sm:gap-4 sm:pb-6 sm:pt-2">
           <div className="flex gap-2" aria-label={`Page ${currentPage + 1} of ${totalPages}`}>
             {story.pages.map((_, index) => (
               <span

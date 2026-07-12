@@ -1,6 +1,6 @@
-# Focus Sprint: One Character. One Story. One Smile.
+# Studio — Internal Creative Workspace
 
-**AdventureBox MVP · Ellie and the Tiny Lost Duck**
+**AdventureBox · Ellie and the Tiny Lost Duck (first bundle)**
 
 ---
 

@@ -1,0 +1,31 @@
+{
+  "title": "Ellie and the Bubble That Wouldn't Pop",
+  "age": "4–6",
+  "readingMinutes": 6,
+  "collection": "ellie",
+  "hero": "ellie",
+  "endMessage": "Pop! Pop! Pop!",
+  "sticker": {
+    "label": "Bubble Parade",
+    "description": "You helped Ellie make the bubble wobble!"
+  },
+  "pages": [
+    { "text": "A bubble floated by." },
+    { "text": "Bigger than Ellie's head!" },
+    { "text": "It followed her everywhere." },
+    { "text": "Bump!" },
+    { "text": "Ellie went very still." },
+    {
+      "text": "Wobble wobble!",
+      "interaction": {
+        "prompt": "Tap to poke the bubble!",
+        "buttonLabel": "Poke! 👆",
+        "revealText": "Wobble wobble!"
+      }
+    },
+    { "text": "It would not pop." },
+    { "text": "Then — tiny bubbles!" },
+    { "text": "They danced in the light." },
+    { "text": "Float on, little friends." }
+  ]
+}

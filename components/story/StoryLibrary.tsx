@@ -1,14 +1,14 @@
-import { getAllStories } from "@/lib/stories";
+import { getPublishedStories } from "@/lib/stories";
 import { StoryCard } from "./StoryCard";
 
 export function StoryLibrary() {
-  const stories = getAllStories();
+  const stories = getPublishedStories();
 
   return (
     <div className="flex h-[100dvh] flex-col overflow-hidden bg-surface-cream">
       <div className="shrink-0 px-4 pb-3 pt-5 text-center sm:px-6 sm:pt-6">
         <p className="mb-1 text-xs font-bold uppercase tracking-[0.15em] text-brand-primary sm:text-sm">
-          📚 Story Library
+          🐘 Ellie Collection
         </p>
         <h1 className="font-[family-name:var(--font-fredoka)] text-2xl font-bold text-text-primary sm:text-3xl">
           Pick a story

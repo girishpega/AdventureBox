@@ -2,6 +2,7 @@
 
 import { useSyncExternalStore } from "react";
 import {
+  getEarnedStickers,
   getStickerBookDisplay,
   STICKER_CATALOG,
   type StickerDefinition,
@@ -17,17 +18,35 @@ const SERVER_STICKERS: DisplaySticker[] = STICKER_CATALOG.map((sticker) => ({
   earned: false,
 }));
 
-function subscribe(onStoreChange: () => void) {
-  window.addEventListener("storage", onStoreChange);
-  return () => window.removeEventListener("storage", onStoreChange);
-}
+let cachedSnapshot: DisplaySticker[] = SERVER_STICKERS;
+let cachedEarnedKey = "[]";
 
 function getSnapshot(): DisplaySticker[] {
-  return getStickerBookDisplay();
+  const earned = getEarnedStickers();
+  const earnedKey = JSON.stringify(earned);
+  if (earnedKey !== cachedEarnedKey) {
+    cachedEarnedKey = earnedKey;
+    cachedSnapshot = getStickerBookDisplay();
+  }
+  return cachedSnapshot;
 }
 
 function getServerSnapshot(): DisplaySticker[] {
   return SERVER_STICKERS;
+}
+
+function subscribe(onStoreChange: () => void) {
+  const handleChange = () => {
+    cachedEarnedKey = "";
+    onStoreChange();
+  };
+
+  window.addEventListener("storage", handleChange);
+  window.addEventListener("adventurebox-stickers-updated", handleChange);
+  return () => {
+    window.removeEventListener("storage", handleChange);
+    window.removeEventListener("adventurebox-stickers-updated", handleChange);
+  };
 }
 
 export function StickerBook() {
