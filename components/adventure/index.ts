@@ -6,3 +6,4 @@ export { CelebrationScreen } from "./CelebrationScreen";
 export { Confetti } from "./Confetti";
 export { StickerReward } from "./StickerReward";
 export { AdventureFlow } from "./AdventureFlow";
+export { ColoringActivity } from "./ColoringActivity";

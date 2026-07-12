@@ -280,6 +280,64 @@ body {
   animation: card-float 4s ease-in-out infinite;
 }
 
+@keyframes treasure-wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg) scale(1.08);
+  }
+  20% {
+    transform: rotate(-4deg) scale(1.1);
+  }
+  40% {
+    transform: rotate(4deg) scale(1.1);
+  }
+  60% {
+    transform: rotate(-2deg) scale(1.09);
+  }
+  80% {
+    transform: rotate(2deg) scale(1.09);
+  }
+}
+
+@keyframes sticker-flip {
+  0% {
+    transform: perspective(400px) rotateY(90deg) scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: perspective(400px) rotateY(-10deg) scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: perspective(400px) rotateY(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rainbow-shimmer {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+    transform: scale(1);
+  }
+  50% {
+    filter: hue-rotate(30deg);
+    transform: scale(1.1);
+  }
+}
+
+.animate-treasure-wiggle {
+  animation: treasure-wiggle 0.5s ease-in-out infinite;
+}
+
+.animate-sticker-flip {
+  animation: sticker-flip 0.8s ease-out forwards;
+}
+
+.animate-rainbow-shimmer {
+  animation: rainbow-shimmer 2s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-float,
   .animate-sparkle,
@@ -294,7 +352,10 @@ body {
   .animate-breathe,
   .animate-twinkle,
   .animate-rainbow-burst,
-  .animate-card-float {
+  .animate-card-float,
+  .animate-treasure-wiggle,
+  .animate-sticker-flip,
+  .animate-rainbow-shimmer {
     animation: none;
   }
 

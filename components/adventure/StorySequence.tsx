@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui";
 import { StoryIllustration } from "./StoryIllustration";
+import { enableSound, playSound } from "@/lib/sounds";
 import type { StoryScene } from "@/types/adventure";
 import type { ThemeColors } from "@/types";
 
@@ -18,6 +19,9 @@ export function StorySequence({ scenes, colors, onComplete }: StorySequenceProps
   const isLastScene = currentScene === scenes.length - 1;
 
   const handleNext = () => {
+    enableSound();
+    playSound("storyTransition");
+
     if (isLastScene) {
       onComplete();
     } else {

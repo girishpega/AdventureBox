@@ -1,9 +1,12 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui";
 import { Confetti } from "./Confetti";
 import { StickerReward } from "./StickerReward";
+import { earnSticker } from "@/lib/stickerBook";
+import { enableSound, playSound } from "@/lib/sounds";
 import type { AdventureCelebration } from "@/types/adventure";
 import type { ThemeColors } from "@/types";
 
@@ -22,6 +25,29 @@ export function CelebrationScreen({
   unicornEmoji,
   onPlayAgain,
 }: CelebrationScreenProps) {
+  const stickerSaved = useRef(false);
+
+  useEffect(() => {
+    enableSound();
+    playSound("celebration");
+
+    const stickerTimer = setTimeout(() => {
+      playSound("stickerReveal");
+    }, 600);
+
+    if (!stickerSaved.current) {
+      stickerSaved.current = true;
+      earnSticker(celebration.sticker);
+    }
+
+    return () => clearTimeout(stickerTimer);
+  }, [celebration.sticker]);
+
+  const handlePlayAgain = () => {
+    enableSound();
+    onPlayAgain();
+  };
+
   return (
     <>
       <Confetti active count={60} />
@@ -52,7 +78,7 @@ export function CelebrationScreen({
           <span className="text-5xl animate-float" role="img" aria-label="Princess Lily">
             {characterEmoji}
           </span>
-          <span className="mb-2 text-3xl" aria-hidden="true">💕</span>
+          <span className="mb-2 text-3xl animate-wiggle" aria-hidden="true">💕</span>
           <span className="text-5xl animate-wiggle" role="img" aria-label="Sparkles the unicorn">
             {unicornEmoji}
           </span>
@@ -60,7 +86,7 @@ export function CelebrationScreen({
 
         <div className="mb-2 flex gap-3" aria-hidden="true">
           <span className="animate-twinkle text-2xl">⭐</span>
-          <span className="text-3xl">🌈</span>
+          <span className="text-3xl animate-rainbow-shimmer">🌈</span>
           <span className="animate-twinkle text-2xl">⭐</span>
         </div>
 
@@ -69,18 +95,28 @@ export function CelebrationScreen({
         </p>
 
         <div className="mb-8 w-full max-w-sm">
-          <StickerReward sticker={celebration.sticker} />
+          <StickerReward sticker={celebration.sticker} flip />
         </div>
 
         <div className="flex w-full max-w-sm flex-col gap-3">
           <Button
             size="lg"
-            onClick={onPlayAgain}
+            onClick={handlePlayAgain}
             style={{ backgroundColor: colors.primary }}
             className="min-h-[56px] w-full text-lg transition-transform hover:scale-105 active:scale-95"
           >
             Play Again 🔄
           </Button>
+          <Link href="/#sticker-book" className="w-full">
+            <Button
+              variant="ghost"
+              size="lg"
+              fullWidth
+              className="min-h-[48px] text-base transition-transform hover:scale-105 active:scale-95"
+            >
+              ⭐ My Sticker Book
+            </Button>
+          </Link>
           <Link href="/" className="w-full">
             <Button
               variant="ghost"

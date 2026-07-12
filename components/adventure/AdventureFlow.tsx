@@ -6,6 +6,7 @@ import type { Theme } from "@/types";
 import { AdventureShell } from "./AdventureShell";
 import { BoxOpen } from "./BoxOpen";
 import { StorySequence } from "./StorySequence";
+import { ColoringActivity } from "./ColoringActivity";
 import { CelebrationScreen } from "./CelebrationScreen";
 import { MazeGame } from "@/games/maze";
 
@@ -55,9 +56,19 @@ export function AdventureFlow({ adventure, theme }: AdventureFlowProps) {
               playerEmoji={adventure.maze.playerEmoji}
               goalEmoji={adventure.maze.goalEmoji}
               colors={adventure.maze.colors}
-              onComplete={() => setPhase("celebrate")}
+              onComplete={() => setPhase("create")}
             />
           </div>
+        );
+
+      case "create":
+        return (
+          <ColoringActivity
+            coloring={adventure.coloring}
+            adventureId={adventure.id}
+            colors={adventure.colors}
+            onComplete={() => setPhase("celebrate")}
+          />
         );
 
       case "celebrate":

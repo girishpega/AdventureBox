@@ -24,13 +24,25 @@ export function Header() {
             </span>
           </Link>
 
-          <nav className="hidden items-center gap-6 sm:flex" aria-label="Main navigation">
-            <a
-              href="#themes"
-              className="text-sm font-semibold text-text-secondary transition-colors hover:text-brand-primary"
+          <nav className="flex items-center gap-3 sm:gap-6" aria-label="Main navigation">
+            <Link
+              href="/for-parents"
+              className="hidden text-sm font-semibold text-text-secondary transition-colors hover:text-brand-primary sm:inline"
+            >
+              For Parents
+            </Link>
+            <Link
+              href="/#sticker-book"
+              className="hidden text-sm font-semibold text-text-secondary transition-colors hover:text-brand-primary md:inline"
+            >
+              Sticker Book
+            </Link>
+            <Link
+              href="/#themes"
+              className="hidden text-sm font-semibold text-text-secondary transition-colors hover:text-brand-primary lg:inline"
             >
               Adventures
-            </a>
+            </Link>
             <Link
               href="/adventure/princess"
               className="rounded-full bg-brand-primary px-4 py-2 text-sm font-bold text-white shadow-sm transition-transform hover:scale-105 active:scale-95"
