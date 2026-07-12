@@ -1,6 +1,6 @@
 # AdventureBox Creative Workflow
 
-**Version:** v0.3.0  
+**Version:** v0.3.1  
 **Purpose:** End-to-end production path for every premium story
 
 ---
@@ -10,6 +10,8 @@
 Every AdventureBox story follows the same pipeline. Agents run in order. Review gates cannot be skipped. Revision loops return work to the **lowest agent who can fix the issue** — not always to the start.
 
 One developer plays all roles. Switch hats explicitly: *"I am now Child Reviewer."*
+
+**Today's pipeline uses agents 01–08 only.** Agents 09–13 are documented for future activation and do not appear in the checklist below.
 
 ---
 
@@ -359,4 +361,86 @@ Before commit, verify:
 
 ---
 
-*AdventureBox Creative Workflow · v0.3.0 · Awaiting Product Owner review*
+## Future Studio Agents — Where They Participate (Inactive)
+
+The diagram below shows **future insertion points** for agents 09–13. These paths are **not active** until AdventureBox meets growth thresholds (~20 stories, 5 characters, print, audio, locales). See [`docs/AGENT_FRAMEWORK.md`](../docs/AGENT_FRAMEWORK.md) — Future Expansion.
+
+```mermaid
+flowchart TD
+    PO1[Product Owner · Scope]
+    LK[Lore Keeper · 09]
+    SW[Story Writer · 01]
+    ND[Narration Director · 12]
+    AD[Art Director · 02]
+    IL[Illustrator · 03]
+    CR[Child Reviewer · 06]
+    PR[Parent Reviewer · 07]
+    CD[Creative Director · 08]
+    PPD[Print Production Director · 11]
+    PE[Platform Engineer · 04]
+    LC[Library Curator · 10]
+    TL[Translation · 13]
+    PO2[Product Owner · Release]
+    COMMIT[Commit]
+
+    PO1 --> SW
+    SW -.->|when active| LK
+    LK -.->|PASS| AD
+    SW --> AD
+    SW -.->|when active| ND
+    ND -.-> AD
+    AD --> IL
+    IL --> CR
+    CR --> PR
+    PR --> CD
+    CD --> PE
+    CD -.->|parallel when active| PPD
+    PE -.->|when active| LC
+    LC --> PO2
+    CD -.->|after English ships| TL
+    PO2 --> COMMIT
+
+    style LK stroke-dasharray: 5 5
+    style ND stroke-dasharray: 5 5
+    style PPD stroke-dasharray: 5 5
+    style LC stroke-dasharray: 5 5
+    style TL stroke-dasharray: 5 5
+```
+
+### Future agent summary
+
+| Agent | When in pipeline | Blocks digital release? |
+|-------|------------------|-------------------------|
+| **09 Lore Keeper** | After Story Writer draft, before Art Director | Yes (when active) |
+| **12 Narration Director** | After story text locked; parallel to art | No |
+| **11 Print Production Director** | After Creative Director PASS | No — parallel print track |
+| **10 Library Curator** | After Platform Engineer integration | Yes (when active) — metadata gate |
+| **13 Translation & Localization** | After English Creative Director PASS | No — parallel locale track |
+
+### Expanded pipeline (when all active)
+
+```
+Product Owner (scope)
+    ↓
+Story Writer
+    ↓
+Lore Keeper ──VIOLATION──→ Story Writer
+    ↓ PASS
+Art Director          Narration Director (parallel)
+    ↓                       ↓
+Illustrator            (narration script)
+    ↓
+Child Reviewer → Parent Reviewer → Creative Director
+    ↓
+Platform Engineer ← Library Curator (metadata)
+    ↓
+Product Owner (release)     Print Director (parallel)
+    ↓                       Translation (parallel, post-English)
+Commit
+```
+
+**Until activation:** Run the Quick Reference (agents 01–08) only. Ignore dashed paths.
+
+---
+
+*AdventureBox Creative Workflow · v0.3.1 · Awaiting Product Owner review*

@@ -1,6 +1,6 @@
 # AdventureBox Creative Team
 
-**Version:** v0.3.0 — Creative Agent Framework  
+**Version:** v0.3.1 — Future Studio Agents  
 **Status:** Awaiting Product Owner review
 
 ---
@@ -9,13 +9,15 @@
 
 This folder is the **operating system** for AdventureBox's publishing studio.
 
-AdventureBox is not built story-by-story in isolation. It is built by a **small creative team** — eight specialized agents — each with a clear mission, inputs, outputs, and handoff rules. One developer runs the studio on weekends. These agents ensure every future premium story ships with Pixar-level consistency, not one-off improvisation.
+AdventureBox is not built story-by-story in isolation. It is built by a **small creative team** — eight active agents today, five documented for tomorrow — each with a clear mission, inputs, outputs, and handoff rules. One developer runs the studio on weekends. These agents ensure every future premium story ships with Pixar-level consistency, not one-off improvisation.
 
 This is **not** engineering documentation. It is how a children's publishing studio operates.
 
 ---
 
-## The Team
+## The Team — Active (v0.3.0)
+
+These eight agents run **today's** story pipeline. Use them for every weekend sprint.
 
 | # | Agent | Role | Authority |
 |---|-------|------|-----------|
@@ -27,6 +29,22 @@ This is **not** engineering documentation. It is how a children's publishing stu
 | 06 | [Child Reviewer](./06_child_reviewer.md) | Tests fun, wonder, and replay desire | Review |
 | 07 | [Parent Reviewer](./07_parent_reviewer.md) | Tests trust, safety, and bedtime fit | Review |
 | 08 | [Creative Director](./08_creative_director.md) | Final creative authority — protects the brand | Creative |
+
+---
+
+## Future Studio Agents — Inactive (v0.3.1)
+
+These five agents are **documented but inactive**. They do not participate in today's workflow. They activate when AdventureBox reaches approximately **20 stories**, **5 characters**, **printable books**, **audiobooks**, or **multiple languages**.
+
+| # | Agent | Role | Activates when |
+|---|-------|------|----------------|
+| 09 | [Lore Keeper](./09_lore_keeper.md) | Protects continuity — canon, timeline, relationships | ~10+ stories, crossovers, memory fails |
+| 10 | [Library Curator](./10_library_curator.md) | Organizes collections, shelves, recommendations | ~8+ stories, crowded library |
+| 11 | [Print Production Director](./11_print_production_director.md) | PDF, KDP, print QA | First print SKU approved |
+| 12 | [Narration Director](./12_narration_director.md) | Read-aloud pacing, emotion, sound timing | Audiobook / narration feature |
+| 13 | [Translation & Localization](./13_translation_localization.md) | Translate without losing magic | First non-English locale |
+
+See [`docs/AGENT_FRAMEWORK.md`](../docs/AGENT_FRAMEWORK.md) — Future Expansion.
 
 ---
 
@@ -88,16 +106,19 @@ Commit
 
 ## Adding Future Agents
 
-When AdventureBox grows, new agents slot into the workflow — they do not replace existing ones.
+Agents 09–13 are pre-documented. Additional agents (Sound Designer, QA Engineer, Marketing Writer) slot into the workflow when needed — they do not replace existing roles.
 
-| Future agent | Likely insertion point |
-|--------------|------------------------|
-| Sound Designer | After Illustrator, before Platform Engineer |
-| Narration Director | After Story Writer, before Art Director |
-| Localization Editor | After Parent Review, before Creative Director |
-| QA Engineer | After Platform Engineer, before Product Owner release |
+| Agent | Insertion point | Status |
+|-------|-----------------|--------|
+| Lore Keeper | After Story Writer, before Art Director | Documented — inactive |
+| Narration Director | After story text locked; parallel to art | Documented — inactive |
+| Print Production Director | After Creative Director PASS; parallel track | Documented — inactive |
+| Translation & Localization | After English ships | Documented — inactive |
+| Library Curator | After Platform Engineer; before release | Documented — inactive |
+| Sound Designer | After Illustrator, before Platform Engineer | Not yet documented |
+| QA Engineer | After Platform Engineer, before Product Owner | Not yet documented |
 
-See [`docs/AGENT_FRAMEWORK.md`](../docs/AGENT_FRAMEWORK.md) for extension rules.
+See [`docs/AGENT_FRAMEWORK.md`](../docs/AGENT_FRAMEWORK.md) for activation rules and extension checklist.
 
 ---
 
@@ -113,4 +134,4 @@ If a story would not survive on a parent's bedside table, it does not ship.
 
 ---
 
-*AdventureBox Creative Team · v0.3.0 · No code · No commits · Awaiting Product Owner review*
+*AdventureBox Creative Team · v0.3.1 · No code · No commits · Awaiting Product Owner review*

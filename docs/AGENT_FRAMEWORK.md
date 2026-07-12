@@ -1,6 +1,6 @@
 # AdventureBox Agent Framework
 
-**Version:** v0.3.0 — Creative Agent Framework  
+**Version:** v0.3.1 — Future Studio Agents  
 **Status:** Awaiting Product Owner review
 
 ---
@@ -29,7 +29,7 @@ The framework scales to hundreds of stories because **the pipeline stays the sam
 
 ---
 
-## The Eight Agents
+## The Eight Active Agents
 
 | Agent | One-line mission |
 |-------|------------------|
@@ -43,6 +43,18 @@ The framework scales to hundreds of stories because **the pipeline stays the sam
 | **Creative Director** | Brand authority; may reject anything |
 
 Full definitions: [`agents/README.md`](../agents/README.md)
+
+### Five future agents (documented, inactive)
+
+| Agent | One-line mission |
+|-------|------------------|
+| **Lore Keeper** | Protect continuity forever |
+| **Library Curator** | Organize the AdventureBox library |
+| **Print Production Director** | Every story prints beautifully |
+| **Narration Director** | Magical read-aloud experiences |
+| **Translation & Localization** | Translate without losing magic |
+
+Full definitions: [`agents/09_lore_keeper.md`](../agents/09_lore_keeper.md) through [`agents/13_translation_localization.md`](../agents/13_translation_localization.md)
 
 ---
 
@@ -203,6 +215,71 @@ A story that passes reviews but drifts from brand **still fails** at Creative Di
 
 ---
 
+## Future Expansion
+
+### Why these agents exist but stay inactive
+
+AdventureBox v0.3.0 established the **core creative team** — enough to ship premium stories on weekends with consistent quality. That eight-agent pipeline is complete and sufficient for the next dozen stories.
+
+Adding Lore Keeper, Library Curator, Print Production Director, Narration Director, or Translation & Localization **today** would violate Product Owner weekend scope protection. These roles solve problems that do not exist yet:
+
+| Problem | Appears around… | Agent |
+|---------|-----------------|-------|
+| "Did Ellie already meet Pip?" | ~10–20 stories, crossovers | Lore Keeper |
+| "Which story should I pick?" | ~8–20 stories on shelf | Library Curator |
+| "Can I buy this as a book?" | First print SKU | Print Production Director |
+| "Read it to me" | Audiobook / narration feature | Narration Director |
+| "Hablamos español" | First non-English locale | Translation & Localization |
+
+Documenting them now **plans the studio** without **running the studio**. When thresholds hit, agents activate with defined handoffs — no improvisation under pressure.
+
+### Activation thresholds (approximate)
+
+Product Owner approves activation per agent. Guidelines:
+
+| Milestone | Suggested activation |
+|-----------|---------------------|
+| **~20 published stories** | Lore Keeper (mandatory), Library Curator |
+| **5 recurring characters in rotation** | Lore Keeper character registry, Library Curator character shelves |
+| **Printable books / KDP** | Print Production Director |
+| **Audiobooks / read-aloud mode** | Narration Director |
+| **Multiple languages** | Translation & Localization (after English canon stable) |
+
+Individual agents may activate **earlier** if a specific product decision demands it (e.g., print SKU at story #5). Product Owner documents the exception.
+
+### What does not change when future agents activate
+
+- Agents 01–08 remain the **digital story pipeline**
+- Future agents **insert or run parallel** — they do not replace Story Writer or Creative Director
+- Reviews (Child, Parent, Creative Director) stay mandatory for every story
+- No future agent commits without Product Owner release approval
+- Print, audio, and locale tracks **never block** English digital weekend sprints unless explicitly scoped
+
+### Workflow impact
+
+Today's workflow is unchanged. See [`agents/WORKFLOW.md`](../agents/WORKFLOW.md) — dashed paths show future participation only.
+
+```
+TODAY (active):     PO → SW → AD → IL → CR → PR → CD → PE → PO → Commit
+
+FUTURE (inactive):  SW → Lore Keeper → AD
+                    CD → Print Director (parallel)
+                    PE → Library Curator → PO
+                    CD → Translation (parallel, post-English)
+```
+
+### Future agent roster
+
+| # | Agent | File | Primary output |
+|---|-------|------|----------------|
+| 09 | Lore Keeper | [`09_lore_keeper.md`](../agents/09_lore_keeper.md) | Canon Bible, continuity PASS/VIOLATION |
+| 10 | Library Curator | [`10_library_curator.md`](../agents/10_library_curator.md) | Collections, featured story, recommendations |
+| 11 | Print Production Director | [`11_print_production_director.md`](../agents/11_print_production_director.md) | Print PDF, KDP package, print QA |
+| 12 | Narration Director | [`12_narration_director.md`](../agents/12_narration_director.md) | Narration script, sound cues |
+| 13 | Translation & Localization | [`13_translation_localization.md`](../agents/13_translation_localization.md) | Localized manuscript, locale review |
+
+---
+
 ## How Future Agents Can Be Added
 
 The framework is extensible. New agents **insert into the workflow** — they do not replace existing roles.
@@ -215,14 +292,12 @@ The framework is extensible. New agents **insert into the workflow** — they do
 4. **Review agents stay narrow** — never add "General QA" that duplicates Child + Parent + Creative Director
 5. **Document insertion point** in WORKFLOW.md before first use
 
-### Candidate future agents
+### Candidate agents not yet documented
 
 | Agent | Insert after | Before | Purpose |
 |-------|--------------|--------|---------|
 | **Sound Designer** | Illustrator | Platform Engineer | Page-turn sounds, celebration audio |
-| **Narration Director** | Story Writer | Art Director | Read-aloud pacing, emphasis marks |
 | **Interaction Designer** | Story Writer | Art Director | Tap targets, adventure game specs |
-| **Localization Editor** | Parent Review | Creative Director | Translate without losing calm tone |
 | **QA Engineer** | Platform Engineer | Product Owner | Automated a11y/perf regression |
 | **Marketing Writer** | Product Owner release | External comms | App Store copy from approved logline |
 
@@ -277,8 +352,9 @@ One developer · one story per weekend · hundreds of stories over years · cons
 | Version | Milestone |
 |---------|-----------|
 | v0.2.x | Creative Foundation — brand, Ellie, first premium story, Story Reader |
-| **v0.3.0** | **Creative Agent Framework — this document** |
-| v0.4.x+ | Stories produced exclusively through agent pipeline |
+| v0.3.0 | Creative Agent Framework — eight active agents |
+| **v0.3.1** | **Future Studio Agents — five inactive agents documented** |
+| v0.4.x+ | Stories produced exclusively through active agent pipeline |
 
 ---
 
@@ -295,4 +371,4 @@ One developer · one story per weekend · hundreds of stories over years · cons
 
 ---
 
-*AdventureBox Agent Framework · v0.3.0 · The operating system for a weekend publishing studio · Awaiting Product Owner review*
+*AdventureBox Agent Framework · v0.3.1 · The operating system for a weekend publishing studio · Awaiting Product Owner review*
