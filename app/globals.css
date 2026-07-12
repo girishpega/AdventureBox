@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fff9f0;
+  --foreground: #2d3436;
+
+  --brand-primary: #6c5ce7;
+  --brand-secondary: #fd79a8;
+  --brand-accent: #fdcb6e;
+  --brand-sky: #74b9ff;
+  --brand-mint: #55efc4;
+
+  --surface-cream: #fff9f0;
+  --surface-white: #ffffff;
+  --surface-lavender: #f3f0ff;
+
+  --text-primary: #2d3436;
+  --text-secondary: #636e72;
+  --text-muted: #b2bec3;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+
+  --shadow-soft: 0 4px 20px rgba(108, 92, 231, 0.12);
+  --shadow-card: 0 8px 32px rgba(45, 52, 54, 0.08);
+  --shadow-card-hover: 0 12px 40px rgba(108, 92, 231, 0.18);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-secondary: var(--brand-secondary);
+  --color-brand-accent: var(--brand-accent);
+  --color-brand-sky: var(--brand-sky);
+  --color-brand-mint: var(--brand-mint);
+
+  --color-surface-cream: var(--surface-cream);
+  --color-surface-white: var(--surface-white);
+  --color-surface-lavender: var(--surface-lavender);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  --font-sans: var(--font-nunito);
+  --font-display: var(--font-fredoka);
+
+  --radius-card: var(--radius-xl);
+  --radius-button: var(--radius-2xl);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-nunito), system-ui, sans-serif;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.animate-wiggle {
+  animation: wiggle 2s ease-in-out infinite;
+}

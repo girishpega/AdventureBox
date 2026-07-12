@@ -1,0 +1,22 @@
+import Link from "next/link";
+import { Container, Heading, Button } from "@/components/ui";
+
+export default function NotFound() {
+  return (
+    <div className="flex min-h-screen flex-col items-center justify-center bg-surface-cream px-4">
+      <Container size="sm" className="text-center">
+        <span className="mb-4 block text-6xl">🗺️</span>
+        <Heading as="h1" className="mb-4">
+          Adventure not found
+        </Heading>
+        <p className="mb-8 text-lg text-text-secondary">
+          This box seems to have wandered off the shelf. Let&apos;s head back
+          home.
+        </p>
+        <Link href="/">
+          <Button size="lg">Back to AdventureBox</Button>
+        </Link>
+      </Container>
+    </div>
+  );
+}
