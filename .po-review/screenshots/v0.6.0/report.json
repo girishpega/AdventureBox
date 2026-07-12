@@ -1,0 +1,52 @@
+{
+  "sprint": "v0.6.0",
+  "brand": "WonderBerry",
+  "screenshots": [
+    {
+      "name": "01-homepage-desktop",
+      "path": ".po-review/screenshots/v0.6.0/01-homepage-desktop.png",
+      "url": "/"
+    },
+    {
+      "name": "02-homepage-mobile",
+      "path": ".po-review/screenshots/v0.6.0/02-homepage-mobile.png",
+      "url": "/"
+    },
+    {
+      "name": "03-library-desktop",
+      "path": ".po-review/screenshots/v0.6.0/03-library-desktop.png",
+      "url": "/stories"
+    },
+    {
+      "name": "04-library-mobile",
+      "path": ".po-review/screenshots/v0.6.0/04-library-mobile.png",
+      "url": "/stories"
+    },
+    {
+      "name": "05-story01-page1",
+      "path": ".po-review/screenshots/v0.6.0/05-story01-page1.png",
+      "url": "/stories/ellie-and-the-tiny-lost-duck"
+    },
+    {
+      "name": "05-story02-page1",
+      "path": ".po-review/screenshots/v0.6.0/05-story02-page1.png",
+      "url": "/stories/ellie-and-the-bubble-that-wouldnt-pop"
+    },
+    {
+      "name": "05-story03-page1",
+      "path": ".po-review/screenshots/v0.6.0/05-story03-page1.png",
+      "url": "/stories/ellie-and-the-very-loud-hiccup"
+    },
+    {
+      "name": "05-story04-page1",
+      "path": ".po-review/screenshots/v0.6.0/05-story04-page1.png",
+      "url": "/stories/ellie-and-the-first-firefly"
+    },
+    {
+      "name": "09-mobile-reader",
+      "path": ".po-review/screenshots/v0.6.0/09-mobile-reader.png",
+      "url": "/stories/ellie-and-the-tiny-lost-duck"
+    }
+  ],
+  "errors": []
+}

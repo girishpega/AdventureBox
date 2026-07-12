@@ -16,11 +16,11 @@ export async function generateMetadata({ params }: StoryPageProps): Promise<Meta
   const story = getPublishedStoryBySlug(slug);
 
   if (!story) {
-    return { title: "Story Not Found — AdventureBox" };
+    return { title: "Story Not Found — WonderBerry" };
   }
 
   return {
-    title: `${story.title} — AdventureBox`,
+    title: `${story.title} — WonderBerry`,
     description: `A bedtime story for ages ${story.age}.`,
   };
 }

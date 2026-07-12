@@ -1,65 +1,59 @@
 import Link from "next/link";
 import { Container } from "@/components/ui";
 
+function BerryLogo() {
+  return (
+    <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-primary to-brand-primary/80 shadow-[var(--shadow-soft)] transition-transform group-hover:scale-105">
+      <svg viewBox="0 0 32 32" fill="none" className="h-6 w-6" aria-hidden="true">
+        <ellipse cx="16" cy="18" rx="10" ry="11" fill="#E85A7E" />
+        <ellipse cx="12" cy="14" rx="4" ry="4.5" fill="#F06B8E" opacity="0.6" />
+        <ellipse cx="20" cy="15" rx="3.5" ry="4" fill="#F06B8E" opacity="0.5" />
+        <circle cx="11" cy="16" r="1.2" fill="#C94B6E" opacity="0.4" />
+        <circle cx="16" cy="20" r="1" fill="#C94B6E" opacity="0.3" />
+        <circle cx="21" cy="17" r="1" fill="#C94B6E" opacity="0.35" />
+        <path
+          d="M16 7 C14 4 18 3 16 7"
+          stroke="#5AAF6E"
+          strokeWidth="2"
+          strokeLinecap="round"
+          fill="none"
+        />
+        <ellipse cx="16" cy="6" rx="3" ry="2" fill="#5AAF6E" opacity="0.8" />
+      </svg>
+    </span>
+  );
+}
+
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-brand-primary/10 bg-surface-cream/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-brand-primary/8 bg-surface-cream/90 backdrop-blur-md">
       <Container>
         <div className="flex h-16 items-center justify-between sm:h-20">
           <Link href="/" className="group flex items-center gap-3">
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-primary shadow-[var(--shadow-soft)] transition-transform group-hover:scale-105">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                className="h-5 w-5"
-                aria-hidden="true"
-              >
-                <rect x="4" y="10" width="16" height="10" rx="2" fill="#A29BFE" />
-                <path d="M4 10 L12 5 L20 10" stroke="#FDCB6E" strokeWidth="2" fill="#A29BFE" />
-                <rect x="10" y="14" width="4" height="4" rx="1" fill="#FDCB6E" />
-              </svg>
-            </span>
+            <BerryLogo />
             <span className="font-[family-name:var(--font-fredoka)] text-xl font-bold text-text-primary sm:text-2xl">
-              Adventure<span className="text-brand-primary">Box</span>
+              Wonder<span className="text-brand-primary">Berry</span>
             </span>
           </Link>
 
-          <nav className="flex items-center gap-3 sm:gap-6" aria-label="Main navigation">
+          <nav className="flex items-center gap-4 sm:gap-8" aria-label="Main navigation">
             <Link
-              href="/for-parents"
-              className="hidden text-sm font-semibold text-text-secondary transition-colors hover:text-brand-primary sm:inline"
+              href="/"
+              className="text-sm font-semibold text-text-secondary transition-colors hover:text-brand-primary"
             >
-              For Parents
-            </Link>
-            <Link
-              href="/#sticker-book"
-              className="hidden text-sm font-semibold text-text-secondary transition-colors hover:text-brand-primary md:inline"
-            >
-              Sticker Book
+              Home
             </Link>
             <Link
               href="/stories"
-              className="hidden text-sm font-semibold text-text-secondary transition-colors hover:text-brand-primary md:inline"
+              className="text-sm font-semibold text-text-secondary transition-colors hover:text-brand-primary"
             >
               Stories
             </Link>
             <Link
-              href="/#stories"
-              className="hidden text-sm font-semibold text-text-secondary transition-colors hover:text-brand-primary lg:inline"
+              href="/for-parents"
+              className="text-sm font-semibold text-text-secondary transition-colors hover:text-brand-primary"
             >
-              Ellie Stories
-            </Link>
-            <Link
-              href="/#themes"
-              className="hidden text-sm font-semibold text-text-secondary transition-colors hover:text-brand-primary lg:inline"
-            >
-              Adventures
-            </Link>
-            <Link
-              href="/adventure/princess"
-              className="rounded-full bg-brand-primary px-4 py-2 text-sm font-bold text-white shadow-sm transition-transform hover:scale-105 active:scale-95"
-            >
-              ✨ Play Now
+              For Parents
             </Link>
           </nav>
         </div>

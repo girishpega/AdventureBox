@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { Header } from "@/components/layout";
 import { getPublishedStories } from "@/lib/stories";
 import { StoryCard } from "./StoryCard";
 
@@ -5,21 +7,31 @@ export function StoryLibrary() {
   const stories = getPublishedStories();
 
   return (
-    <div className="flex h-[100dvh] flex-col overflow-hidden bg-surface-cream">
-      <div className="shrink-0 px-4 pb-3 pt-5 text-center sm:px-6 sm:pt-6">
-        <p className="mb-1 text-xs font-bold uppercase tracking-[0.15em] text-brand-primary sm:text-sm">
-          🐘 Ellie Collection
-        </p>
-        <h1 className="font-[family-name:var(--font-fredoka)] text-2xl font-bold text-text-primary sm:text-3xl">
-          Pick a story
-        </h1>
-      </div>
+    <div className="flex min-h-[100dvh] flex-col bg-gradient-to-b from-surface-cream via-surface-warm to-surface-cream">
+      <Header />
 
-      <div className="flex min-h-0 flex-1 items-center px-4 pb-5 sm:px-6 sm:pb-6">
-        <div className="mx-auto grid w-full max-w-3xl grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:max-w-4xl lg:gap-6">
-          {stories.map((story) => (
-            <StoryCard key={story.slug} story={story} />
-          ))}
+      <div className="flex-1 px-4 py-10 sm:px-6 sm:py-14">
+        <div className="mx-auto max-w-5xl">
+          <div className="mb-12 text-center">
+            <Link
+              href="/"
+              className="mb-4 inline-block font-[family-name:var(--font-fredoka)] text-sm font-semibold text-brand-primary transition-colors hover:text-brand-primary/80"
+            >
+              ← WonderBerry
+            </Link>
+            <h1 className="font-[family-name:var(--font-fredoka)] text-3xl font-bold text-text-primary sm:text-4xl lg:text-5xl">
+              Story Library
+            </h1>
+            <p className="mx-auto mt-3 max-w-lg text-lg text-text-secondary">
+              Pick a book and begin your adventure.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2 lg:gap-10">
+            {stories.map((story) => (
+              <StoryCard key={story.slug} story={story} size="large" />
+            ))}
+          </div>
         </div>
       </div>
     </div>

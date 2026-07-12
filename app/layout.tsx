@@ -15,9 +15,9 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "AdventureBox — Magical Adventures for Kids",
+  title: "WonderBerry — Little Stories. Big Wonder.",
   description:
-    "Themed adventure boxes for children. Open a box, follow the story, play, create, and celebrate.",
+    "A cozy home for bedtime adventures. Beautiful children's stories to read together.",
 };
 
 export default function RootLayout({

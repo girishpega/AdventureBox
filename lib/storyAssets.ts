@@ -1,9 +1,10 @@
 export const READER_THEME = {
-  primary: "#00B894",
-  secondary: "#55EFC4",
-  accent: "#FDCB6E",
-  background: "#E8FFF8",
-  night: "#1a4035",
+  primary: "#C94B6E",
+  secondary: "#5AAF6E",
+  accent: "#F5B942",
+  background: "#FFF8F0",
+  text: "#3D2C2E",
+  night: "#3D2C2E",
 } as const;
 
 export function coverUrl(slug: string): string {

@@ -1,22 +1,24 @@
 export const colors = {
   brand: {
-    primary: "#6C5CE7",
-    secondary: "#FD79A8",
-    accent: "#FDCB6E",
-    sky: "#74B9FF",
-    mint: "#55EFC4",
+    primary: "#C94B6E",
+    secondary: "#F5B942",
+    accent: "#5AAF6E",
+    sky: "#7EC8E3",
+    lavender: "#C5B4E3",
+    mint: "#5AAF6E",
   },
   surface: {
-    cream: "#FFF9F0",
+    cream: "#FFF8F0",
     white: "#FFFFFF",
-    lavender: "#F3F0FF",
+    lavender: "#F5F0FA",
+    warm: "#FFF5EE",
     peach: "#FFF5EE",
   },
   text: {
-    primary: "#2D3436",
-    secondary: "#636E72",
+    primary: "#3D2C2E",
+    secondary: "#6B5A5C",
     inverse: "#FFFFFF",
-    muted: "#B2BEC3",
+    muted: "#A8989A",
   },
   theme: {
     princess: {
@@ -66,8 +68,9 @@ export const radii = {
 } as const;
 
 export const shadows = {
-  soft: "0 4px 20px rgba(108, 92, 231, 0.12)",
-  card: "0 8px 32px rgba(45, 52, 54, 0.08)",
-  cardHover: "0 12px 40px rgba(108, 92, 231, 0.18)",
-  button: "0 4px 14px rgba(108, 92, 231, 0.35)",
+  soft: "0 4px 20px rgba(201, 75, 110, 0.1)",
+  card: "0 8px 32px rgba(61, 44, 46, 0.06)",
+  cardHover: "0 16px 48px rgba(201, 75, 110, 0.14)",
+  button: "0 4px 14px rgba(201, 75, 110, 0.3)",
+  warm: "0 12px 40px rgba(245, 185, 66, 0.12)",
 } as const;

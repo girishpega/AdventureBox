@@ -1,33 +1,37 @@
 import Link from "next/link";
 import { Footer, Header } from "@/components/layout";
-import { StickerBook } from "@/components/sticker-book/StickerBook";
 import { StoryCard } from "@/components/story/StoryCard";
-import {
-  Button,
-  Container,
-  Heading,
-  PlaceholderIllustration,
-  ThemeCard,
-} from "@/components/ui";
+import { Button, Container, Heading } from "@/components/ui";
 import { getPublishedStories } from "@/lib/stories";
-import { themes } from "@/lib/themes";
 
-const HOW_IT_WORKS = [
+const WHY_FAMILIES = [
   {
-    title: "Pick a story",
-    description: "Choose a gentle Ellie adventure — perfect for bedtime.",
-    emoji: "📘",
+    emoji: "🌙",
+    title: "Gentle bedtime stories",
+    description: "Calm, cozy tales perfect for winding down together.",
   },
   {
-    title: "Read together",
-    description: "Beautiful artwork on every page. Tap, turn, and wonder.",
+    emoji: "❤️",
+    title: "Original lovable characters",
+    description: "Meet Ellie and friends in stories children adore.",
+  },
+  {
+    emoji: "📖",
+    title: "Read together in minutes",
+    description: "Short, beautiful stories that fit any evening routine.",
+  },
+  {
     emoji: "✨",
+    title: "Beautiful illustrations",
+    description: "Every page is a work of art, crafted with care.",
   },
-  {
-    title: "Collect stickers",
-    description: "Finish a story and earn a sticker for your book.",
-    emoji: "⭐",
-  },
+];
+
+const PARENT_PROMISE = [
+  "No ads",
+  "No overstimulation",
+  "No endless scrolling",
+  "Just wonderful stories.",
 ];
 
 export default function HomePage() {
@@ -38,93 +42,80 @@ export default function HomePage() {
       <Header />
 
       <main className="flex-1 overflow-x-hidden">
-        <section className="relative overflow-hidden py-12 sm:py-16 lg:py-20">
+        {/* Hero */}
+        <section className="relative overflow-hidden py-16 sm:py-24 lg:py-28">
           <div className="pointer-events-none absolute inset-0 overflow-hidden">
-            <div className="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-brand-primary/10 blur-3xl" />
-            <div className="absolute -bottom-20 -right-20 h-72 w-72 rounded-full bg-brand-secondary/10 blur-3xl" />
-            <div className="absolute left-1/2 top-1/3 h-48 w-48 -translate-x-1/2 rounded-full bg-brand-accent/10 blur-3xl" />
+            <div className="absolute -left-24 -top-24 h-80 w-80 rounded-full bg-brand-primary/8 blur-3xl" />
+            <div className="absolute -bottom-24 -right-24 h-96 w-96 rounded-full bg-brand-secondary/10 blur-3xl" />
+            <div className="absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-lavender/15 blur-3xl" />
           </div>
 
           <Container>
-            <div className="relative z-10 text-center">
-              <span className="mb-4 inline-flex items-center gap-2 rounded-full bg-brand-primary/10 px-4 py-1.5 text-sm font-bold text-brand-primary">
-                🐘 Ellie Collection
+            <div className="relative z-10 mx-auto max-w-3xl text-center">
+              <span className="mb-6 inline-block text-5xl sm:text-6xl" role="img" aria-label="Strawberry">
+                🍓
               </span>
-              <Heading as="h1" gradient className="mb-4">
+              <Heading as="h1" gradient className="mb-3">
+                WonderBerry
+              </Heading>
+              <p className="mb-1 font-[family-name:var(--font-fredoka)] text-xl font-semibold text-brand-primary sm:text-2xl">
+                Little Stories.
+              </p>
+              <p className="mb-6 font-[family-name:var(--font-fredoka)] text-xl font-semibold text-brand-secondary sm:text-2xl">
+                Big Wonder.
+              </p>
+              <p className="mx-auto mb-10 max-w-xl text-lg leading-relaxed text-text-secondary sm:text-xl">
+                A cozy home for bedtime adventures.
+              </p>
+              <Link href="/stories">
+                <Button
+                  size="lg"
+                  className="min-h-[56px] min-w-[200px] animate-gentle-bounce bg-gradient-to-r from-brand-primary to-brand-primary/90 text-lg shadow-[var(--shadow-button)] hover:from-brand-primary/95 hover:to-brand-primary/85"
+                >
+                  Read Tonight
+                </Button>
+              </Link>
+            </div>
+          </Container>
+        </section>
+
+        {/* Featured Collection */}
+        <section className="bg-gradient-to-b from-surface-warm to-surface-cream py-16 sm:py-24">
+          <Container>
+            <div className="mb-12 text-center">
+              <span className="mb-3 inline-block text-3xl" role="img" aria-label="Elephant">
+                🐘
+              </span>
+              <Heading as="h2" className="mb-3">
                 Meet Ellie
               </Heading>
-              <p className="mx-auto mb-10 max-w-2xl text-lg text-text-secondary sm:text-xl">
-                A premium children&apos;s story library — four Ellie adventures,
-                beautiful on every page.
-              </p>
-
-              <div className="mx-auto grid max-w-3xl grid-cols-1 gap-5 sm:grid-cols-2 lg:max-w-4xl lg:gap-6">
-                {publishedStories.map((story) => (
-                  <StoryCard key={story.slug} story={story} />
-                ))}
-              </div>
-
-              <div className="mt-8">
-                <Link href="/stories">
-                  <Button variant="ghost" size="lg" className="min-h-[48px]">
-                    Browse Story Library →
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </Container>
-        </section>
-
-        <section id="sticker-book" className="bg-surface-cream py-16 sm:py-24">
-          <Container>
-            <div className="mb-12 text-center">
-              <Heading as="h2" className="mb-4">
-                ⭐ My Sticker Book
-              </Heading>
-              <p className="mx-auto max-w-2xl text-lg text-text-secondary">
-                Complete adventures to collect magical stickers. Can you collect them all?
+              <p className="mx-auto max-w-xl text-lg text-text-secondary">
+                Four beautiful stories about a little elephant with a big heart.
               </p>
             </div>
 
-            <StickerBook />
-          </Container>
-        </section>
-
-        <section id="themes" className="bg-surface-white py-16 sm:py-24">
-          <Container>
-            <div className="mb-12 text-center">
-              <Heading as="h2" className="mb-4">
-                Pick your adventure
-              </Heading>
-              <p className="mx-auto max-w-2xl text-lg text-text-secondary">
-                Each box is a complete journey. Tap to begin.
-              </p>
-            </div>
-
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              {themes.map((theme) => (
-                <ThemeCard key={theme.id} theme={theme} />
+            <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2 lg:gap-8">
+              {publishedStories.map((story) => (
+                <StoryCard key={story.slug} story={story} />
               ))}
             </div>
           </Container>
         </section>
 
-        <section id="how-it-works" className="py-16 sm:py-24">
+        {/* Why Families Love WonderBerry */}
+        <section className="py-16 sm:py-24">
           <Container>
             <div className="mb-12 text-center">
-              <Heading as="h2" className="mb-4">
-                How it works
+              <Heading as="h2" className="mb-3">
+                Why Families Love WonderBerry
               </Heading>
-              <p className="mx-auto max-w-2xl text-lg text-text-secondary">
-                A tiny adventure in magical steps — perfect for ages 4–8.
-              </p>
             </div>
 
-            <div className="grid gap-8 md:grid-cols-3">
-              {HOW_IT_WORKS.map((item) => (
+            <div className="mx-auto grid max-w-4xl gap-6 sm:grid-cols-2 lg:gap-8">
+              {WHY_FAMILIES.map((item) => (
                 <div
                   key={item.title}
-                  className="animate-card-float rounded-[var(--radius-card)] bg-surface-cream p-8 text-center shadow-[var(--shadow-card)]"
+                  className="hover-lift rounded-[var(--radius-card)] bg-surface-white p-8 text-center shadow-[var(--shadow-card)]"
                 >
                   <span className="mb-4 block text-4xl">{item.emoji}</span>
                   <h3 className="mb-2 font-[family-name:var(--font-fredoka)] text-xl font-bold text-text-primary">
@@ -137,36 +128,23 @@ export default function HomePage() {
           </Container>
         </section>
 
-        <section className="bg-gradient-to-br from-brand-primary to-brand-secondary py-16 text-white sm:py-20">
-          <Container>
-            <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
-              <div className="text-center lg:text-left">
-                <Heading as="h2" className="mb-4 text-white">
-                  Ready for wonder?
-                </Heading>
-                <p className="mx-auto mb-8 max-w-xl text-lg text-white/90 lg:mx-0">
-                  Open a magical box, play a mini-game, and create something beautiful.
-                </p>
-                <Link href="/adventure/princess">
-                  <Button
-                    variant="theme"
-                    size="lg"
-                    className="min-h-[56px] min-w-[220px] bg-white text-lg text-brand-primary transition-transform hover:scale-105 hover:bg-white/95 active:scale-95"
+        {/* Parent Promise */}
+        <section className="bg-gradient-to-br from-brand-lavender/20 via-surface-lavender/50 to-brand-sky/10 py-16 sm:py-20">
+          <Container size="sm">
+            <div className="text-center">
+              <Heading as="h2" className="mb-8">
+                Our Promise to Parents
+              </Heading>
+              <ul className="space-y-4">
+                {PARENT_PROMISE.map((item) => (
+                  <li
+                    key={item}
+                    className="font-[family-name:var(--font-fredoka)] text-xl font-semibold text-text-primary sm:text-2xl"
                   >
-                    ✨ Start Adventure
-                  </Button>
-                </Link>
-              </div>
-
-              <div className="relative mx-auto w-full max-w-md lg:max-w-lg">
-                <Link
-                  href="/adventure/princess"
-                  className="animate-float block transition-transform hover:scale-[1.02] active:scale-[0.98]"
-                  aria-label="Start the Princess adventure"
-                >
-                  <PlaceholderIllustration theme="box" />
-                </Link>
-              </div>
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </div>
           </Container>
         </section>

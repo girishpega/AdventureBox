@@ -3,13 +3,34 @@ import { Container } from "@/components/ui";
 
 export function Footer() {
   return (
-    <footer className="mt-auto border-t border-brand-primary/10 bg-surface-white py-8">
+    <footer className="mt-auto border-t border-brand-primary/8 bg-surface-white py-12">
       <Container>
-        <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-          <p className="font-[family-name:var(--font-fredoka)] text-sm font-semibold text-text-primary">
-            AdventureBox
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
+        <div className="flex flex-col items-center gap-8 text-center">
+          <div>
+            <p className="font-[family-name:var(--font-fredoka)] text-2xl font-bold text-text-primary">
+              Wonder<span className="text-brand-primary">Berry</span>
+            </p>
+            <p className="mt-1 font-[family-name:var(--font-fredoka)] text-base text-brand-primary">
+              Little Stories.
+            </p>
+            <p className="font-[family-name:var(--font-fredoka)] text-base text-brand-secondary">
+              Big Wonder.
+            </p>
+          </div>
+
+          <nav className="flex flex-wrap items-center justify-center gap-6 text-sm">
+            <Link
+              href="/stories"
+              className="font-semibold text-text-secondary transition-colors hover:text-brand-primary"
+            >
+              Stories
+            </Link>
+            <Link
+              href="/stories"
+              className="font-semibold text-text-secondary transition-colors hover:text-brand-primary"
+            >
+              Collections
+            </Link>
             <Link
               href="/for-parents"
               className="font-semibold text-text-secondary transition-colors hover:text-brand-primary"
@@ -17,16 +38,22 @@ export function Footer() {
               For Parents
             </Link>
             <Link
-              href="/#sticker-book"
+              href="/for-parents"
               className="font-semibold text-text-secondary transition-colors hover:text-brand-primary"
             >
-              Sticker Book
+              Privacy
             </Link>
-          </div>
-          <p className="text-center text-sm text-text-muted">
-            Magical adventures for curious kids.
+            <Link
+              href="/for-parents"
+              className="font-semibold text-text-secondary transition-colors hover:text-brand-primary"
+            >
+              Contact
+            </Link>
+          </nav>
+
+          <p className="text-sm text-text-muted">
+            © {new Date().getFullYear()} WonderBerry. All rights reserved.
           </p>
-          <p className="text-xs text-text-muted">v0.2.1</p>
         </div>
       </Container>
     </footer>

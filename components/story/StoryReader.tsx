@@ -78,18 +78,18 @@ export function StoryReader({ story }: StoryReaderProps) {
   return (
     <div
       className="story-reader relative flex h-[100dvh] flex-col overflow-hidden"
-      style={{ backgroundColor: theme.night }}
+      style={{ backgroundColor: theme.background }}
     >
       <div
         className="pointer-events-none absolute inset-0"
         style={{
-          background: `radial-gradient(ellipse at 50% 20%, ${theme.primary}33 0%, transparent 60%)`,
+          background: `radial-gradient(ellipse at 50% 0%, ${theme.primary}12 0%, transparent 50%)`,
         }}
       />
       <div
         className="pointer-events-none absolute inset-0"
         style={{
-          background: `radial-gradient(ellipse at 80% 80%, ${theme.accent}18 0%, transparent 50%)`,
+          background: `radial-gradient(ellipse at 80% 100%, ${theme.secondary}10 0%, transparent 40%)`,
         }}
       />
 
@@ -116,11 +116,11 @@ export function StoryReader({ story }: StoryReaderProps) {
                   index === currentPage
                     ? "w-8"
                     : index < currentPage
-                      ? "w-1.5 opacity-50"
-                      : "w-1.5 opacity-20",
+                      ? "w-1.5 opacity-60"
+                      : "w-1.5 opacity-25",
                 ].join(" ")}
                 style={{
-                  backgroundColor: index <= currentPage ? theme.accent : "white",
+                  backgroundColor: index <= currentPage ? theme.primary : theme.text,
                 }}
                 aria-hidden="true"
               />
@@ -134,7 +134,7 @@ export function StoryReader({ story }: StoryReaderProps) {
                   type="button"
                   onClick={goPrev}
                   disabled={isTransitioning}
-                  className="flex h-14 w-14 items-center justify-center rounded-full border border-white/15 bg-white/5 text-xl text-white/70 backdrop-blur-sm transition-all hover:bg-white/10 hover:text-white active:scale-95 disabled:opacity-40"
+                  className="flex h-14 w-14 items-center justify-center rounded-full border border-brand-primary/15 bg-surface-white text-xl text-text-secondary shadow-[var(--shadow-soft)] transition-all hover:bg-surface-lavender hover:text-brand-primary active:scale-95 disabled:opacity-40"
                   aria-label="Previous page"
                 >
                   ←
@@ -145,8 +145,8 @@ export function StoryReader({ story }: StoryReaderProps) {
                 type="button"
                 onClick={goNext}
                 disabled={isTransitioning}
-                className="flex h-16 min-w-[200px] flex-1 items-center justify-center rounded-full text-lg font-bold shadow-[0_8px_32px_rgba(0,0,0,0.25)] transition-all hover:scale-[1.03] active:scale-[0.97] disabled:opacity-60 sm:min-w-[240px] sm:text-xl"
-                style={{ backgroundColor: theme.accent, color: theme.night }}
+                className="flex h-16 min-w-[200px] flex-1 items-center justify-center rounded-full text-lg font-bold text-white shadow-[0_8px_32px_rgba(201,75,110,0.25)] transition-all hover:scale-[1.03] active:scale-[0.97] disabled:opacity-60 sm:min-w-[240px] sm:text-xl"
+                style={{ backgroundColor: theme.primary }}
                 aria-label={isLastPage ? "Finish story" : "Next page"}
               >
                 {isLastPage ? "The End ✨" : "Next →"}

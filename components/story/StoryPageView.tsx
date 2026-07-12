@@ -35,9 +35,9 @@ export function StoryPageView({
       : page.text;
 
   return (
-    <div className="flex min-h-0 flex-1 flex-col items-center overflow-hidden px-4 pt-3 pb-1 sm:px-6 sm:pt-4">
+    <div className="flex min-h-0 flex-1 flex-col items-center overflow-hidden px-4 pt-4 pb-1 sm:px-6 sm:pt-6">
       {isFirstPage && (
-        <p className="mb-2 shrink-0 text-center font-[family-name:var(--font-fredoka)] text-xs font-medium tracking-[0.2em] text-white/40 uppercase sm:mb-3 sm:text-sm">
+        <p className="mb-3 shrink-0 text-center font-[family-name:var(--font-fredoka)] text-xs font-medium tracking-[0.2em] text-text-muted uppercase sm:mb-4 sm:text-sm">
           {storyTitle}
         </p>
       )}
@@ -52,8 +52,8 @@ export function StoryPageView({
           .filter(Boolean)
           .join(" ")}
       >
-        <div className="mb-3 flex min-h-0 w-full flex-1 items-center justify-center sm:mb-4">
-          <div className="story-illustration-frame overflow-hidden rounded-2xl bg-[#0d2e26] shadow-[0_24px_80px_rgba(0,0,0,0.5)] ring-1 ring-white/10 sm:rounded-3xl">
+        <div className="mb-4 flex min-h-0 w-full flex-1 items-center justify-center sm:mb-6">
+          <div className="story-illustration-frame overflow-hidden rounded-2xl bg-surface-white shadow-[0_16px_64px_rgba(61,44,46,0.12)] ring-1 ring-black/[0.04] sm:rounded-3xl">
             <StoryBundleImage
               src={pageUrl(storySlug, pageIndex)}
               alt={`${storyTitle} — page ${pageIndex + 1}`}
@@ -65,7 +65,7 @@ export function StoryPageView({
         </div>
 
         <div className="w-full max-w-lg shrink-0 text-center">
-          <p className="font-[family-name:var(--font-fredoka)] text-2xl font-semibold leading-snug tracking-tight text-white sm:text-3xl md:text-4xl">
+          <p className="font-[family-name:var(--font-fredoka)] text-2xl font-semibold leading-snug tracking-tight text-text-primary sm:text-3xl md:text-4xl">
             {displayText}
           </p>
 
@@ -73,14 +73,14 @@ export function StoryPageView({
             <button
               type="button"
               onClick={onInteraction}
-              className="mt-4 animate-pulse-glow rounded-full border-2 border-white/25 bg-white/10 px-7 py-3 font-[family-name:var(--font-fredoka)] text-base font-semibold text-white backdrop-blur-sm transition-all hover:scale-105 hover:bg-white/15 active:scale-95 sm:mt-5 sm:px-8 sm:py-4 sm:text-lg"
+              className="mt-5 animate-pulse-glow rounded-full border-2 border-brand-primary/20 bg-brand-primary/10 px-8 py-3 font-[family-name:var(--font-fredoka)] text-base font-semibold text-brand-primary backdrop-blur-sm transition-all hover:scale-105 hover:bg-brand-primary/15 active:scale-95 sm:mt-6 sm:px-9 sm:py-4 sm:text-lg"
             >
               {page.interaction.buttonLabel}
             </button>
           )}
 
           {hasInteraction && page.interaction && !interactionRevealed && (
-            <p className="mt-2 text-sm text-white/45">{page.interaction.prompt}</p>
+            <p className="mt-2 text-sm text-text-muted">{page.interaction.prompt}</p>
           )}
         </div>
       </div>
