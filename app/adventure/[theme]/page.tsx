@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import { AdventureLayout } from "@/components/layout";
+import { AdventureFlow } from "@/components/adventure";
 import { getThemeById } from "@/lib/themes";
+import { getAdventureByThemeId, isPlayableTheme } from "@/lib/adventures";
 
 interface AdventurePageProps {
   params: Promise<{ theme: string }>;
@@ -35,6 +37,11 @@ export default async function AdventurePage({ params }: AdventurePageProps) {
 
   if (!theme) {
     notFound();
+  }
+
+  if (isPlayableTheme(themeId)) {
+    const adventure = getAdventureByThemeId(theme.id)!;
+    return <AdventureFlow adventure={adventure} theme={theme} />;
   }
 
   return <AdventureLayout theme={theme} />;

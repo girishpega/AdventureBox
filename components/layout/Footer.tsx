@@ -9,9 +9,9 @@ export function Footer() {
             AdventureBox
           </p>
           <p className="text-center text-sm text-text-muted">
-            Magical adventures for curious kids. Built with wonder.
+            Magical adventures for curious kids. Safe, simple, and joyful.
           </p>
-          <p className="text-xs text-text-muted">v0.1.0 — Foundation Sprint</p>
+          <p className="text-xs text-text-muted">v0.2.0</p>
         </div>
       </Container>
     </footer>

@@ -24,3 +24,14 @@ export interface AdventureBeatConfig {
   label: string;
   description: string;
 }
+
+export type {
+  AdventurePhase,
+  StoryScene,
+  StickerReward,
+  AdventureCelebration,
+  AdventureStory,
+  MazeThemeColors,
+  MazeConfig,
+  PlayableAdventure,
+} from "./adventure";
