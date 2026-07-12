@@ -1,0 +1,133 @@
+{
+  "pageShots": [
+    {
+      "page": 1,
+      "text": "ELLIE AND THE TINY LOST DUCK\n\nEllie heard a peep.\n\nNext →",
+      "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-tiny-lost-duck%2Fpage01.webp&w=3840&q=75"
+    },
+    {
+      "page": 2,
+      "text": "Someone was lost.\n\n←\nNext →",
+      "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-tiny-lost-duck%2Fpage02.webp&w=3840&q=75"
+    },
+    {
+      "page": 3,
+      "text": "Where are you?\n\nLook! 👀\n\nTap to help Ellie look!",
+      "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-tiny-lost-duck%2Fpage03.webp&w=3840&q=75"
+    },
+    {
+      "page": 4,
+      "text": "It was in her trunk!\n\n←\nNext →",
+      "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-tiny-lost-duck%2Fpage04.webp&w=3840&q=75"
+    },
+    {
+      "page": 5,
+      "text": "Best friends!\n\n←\nThe End ✨",
+      "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-tiny-lost-duck%2Fpage05.webp&w=3840&q=75"
+    }
+  ],
+  "homeDesktop": {
+    "text": "AdventureBox\nFor Parents\nSticker Book\nStories\nEllie Stories\nAdventures\n✨ Play Now\n🐘 Ellie Collection\nMeet Ellie\n\nA premium children's story library — two gentle adventures, beautiful on every page.\n\nEllie and the Tiny Lost Duck\n\nAges 4–6 · 3 min read\n\nRead Story ✨\nEllie and the Bubble That Wouldn't Pop\n\nAges 4–6 · 6 min read\n\nRead Story ✨\nBrowse Story Library →\n⭐ My Sticker Book\n\nComplete adventures to collect magical stickers. Can you collect them all?\n\nComplete an adventure to earn your first sticker!\n\n🔒\n🦄\nRainbow Helper\nComing soon...\n🔒\n🦕\nDino Explorer\nComing soon...\n🔒\n🚀\nSpace Hero\nC",
+    "imgs": [
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-tiny-lost-duck%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Tiny Lost Duck cover",
+        "w": 512,
+        "h": 341
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-bubble-that-wouldnt-pop%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Bubble That Wouldn't Pop cover",
+        "w": 512,
+        "h": 341
+      }
+    ]
+  },
+  "homeMeetEllie": {
+    "text": "AdventureBox\nFor Parents\nSticker Book\nStories\nEllie Stories\nAdventures\n✨ Play Now\n🐘 Ellie Collection\nMeet Ellie\n\nA premium children's story library — two gentle adventures, beautiful on every page.\n\nEllie and the Tiny Lost Duck\n\nAges 4–6 · 3 min read\n\nRead Story ✨\nEllie and the Bubble That Wouldn't Pop\n\nAges 4–6 · 6 min read\n\nRead Story ✨\nBrowse Story Library →\n⭐ My Sticker Book\n\nComplete adventures to collect magical stickers. Can you collect them all?\n\nComplete an adventure to earn your first sticker!\n\n🔒\n🦄\nRainbow Helper\nComing soon...\n🔒\n🦕\nDino Explorer\nComing soon...\n🔒\n🚀\nSpace Hero\nC",
+    "imgs": [
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-tiny-lost-duck%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Tiny Lost Duck cover",
+        "w": 512,
+        "h": 341
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-bubble-that-wouldnt-pop%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Bubble That Wouldn't Pop cover",
+        "w": 512,
+        "h": 341
+      }
+    ]
+  },
+  "homeMobile": {
+    "text": "AdventureBox\n✨ Play Now\n🐘 Ellie Collection\nMeet Ellie\n\nA premium children's story library — two gentle adventures, beautiful on every page.\n\nEllie and the Tiny Lost Duck\n\nAges 4–6 · 3 min read\n\nRead Story ✨\nEllie and the Bubble That Wouldn't Pop\n\nAges 4–6 · 6 min read\n\nRead Story ✨\nBrowse Story Library →\n⭐ My Sticker Book\n\nComplete adventures to collect magical stickers. Can you collect them all?\n\nComplete an adventure to earn your first sticker!\n\n🔒\n🦄\nRainbow Helper\nComing soon...\n🔒\n🦕\nDino Explorer\nComing soon...\n🔒\n🚀\nSpace Hero\nComing soon...\n🔒\n👑\nPrincess Artist\nComing soon...\nPick yo",
+    "imgs": [
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-tiny-lost-duck%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Tiny Lost Duck cover",
+        "w": 390,
+        "h": 260
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-bubble-that-wouldnt-pop%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Bubble That Wouldn't Pop cover",
+        "w": 390,
+        "h": 260
+      }
+    ]
+  },
+  "libraryDesktop": {
+    "text": "🐘 ELLIE COLLECTION\n\nPick a story\nEllie and the Tiny Lost Duck\n\nAges 4–6 · 3 min read\n\nRead Story ✨\nEllie and the Bubble That Wouldn't Pop\n\nAges 4–6 · 6 min read\n\nRead Story ✨",
+    "imgs": [
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-tiny-lost-duck%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Tiny Lost Duck cover",
+        "w": 512,
+        "h": 341
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-bubble-that-wouldnt-pop%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Bubble That Wouldn't Pop cover",
+        "w": 512,
+        "h": 341
+      }
+    ]
+  },
+  "libraryMobile": {
+    "text": "🐘 ELLIE COLLECTION\n\nPick a story\nEllie and the Tiny Lost Duck\n\nAges 4–6 · 3 min read\n\nRead Story ✨\nEllie and the Bubble That Wouldn't Pop\n\nAges 4–6 · 6 min read\n\nRead Story ✨",
+    "imgs": [
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-tiny-lost-duck%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Tiny Lost Duck cover",
+        "w": 390,
+        "h": 260
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-bubble-that-wouldnt-pop%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Bubble That Wouldn't Pop cover",
+        "w": 390,
+        "h": 260
+      }
+    ]
+  },
+  "endingText": "✨ NEW STICKER! ✨\n\n✨\nDucky Friend\n\nYou helped Ellie find her tiny friend!\n\nThe End\n\nQuack yeah!\n\nMore stories are waiting for you.\n\nRead Again ✨\n← All Stories",
+  "libraryForBubble": {
+    "text": "🐘 ELLIE COLLECTION\n\nPick a story\nEllie and the Tiny Lost Duck\n\nAges 4–6 · 3 min read\n\nRead Story ✨\nEllie and the Bubble That Wouldn't Pop\n\nAges 4–6 · 6 min read\n\nRead Story ✨",
+    "imgs": [
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-tiny-lost-duck%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Tiny Lost Duck cover",
+        "w": 512,
+        "h": 341
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-bubble-that-wouldnt-pop%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Bubble That Wouldn't Pop cover",
+        "w": 512,
+        "h": 341
+      }
+    ]
+  },
+  "errors": []
+}

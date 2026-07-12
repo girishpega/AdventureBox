@@ -1,0 +1,31 @@
+{
+  "title": "Ellie and the Very Loud Hiccup",
+  "age": "4–6",
+  "readingMinutes": 5,
+  "collection": "ellie",
+  "hero": "ellie",
+  "endMessage": "Hic! Ha ha!",
+  "sticker": {
+    "label": "Giggle Hiccups",
+    "description": "You helped Ellie calm her trunk!"
+  },
+  "pages": [
+    { "text": "Ellie was very quiet." },
+    { "text": "Then — hic!" },
+    { "text": "The birds flew up!" },
+    { "text": "Hic! Hic!" },
+    { "text": "Even the grass wiggled." },
+    {
+      "text": "Ellie's trunk bounced!",
+      "interaction": {
+        "prompt": "Tap to hold Ellie's trunk still!",
+        "buttonLabel": "Hold! 🐘",
+        "revealText": "Still… still…"
+      }
+    },
+    { "text": "Hic! POP! A bubble!" },
+    { "text": "Ellie's eyes went wide." },
+    { "text": "Then she laughed." },
+    { "text": "The hiccups danced away." }
+  ]
+}

@@ -7,11 +7,15 @@ import type { StoryBundle, StoryBundleData, StorySummary } from "@/types/story";
 
 import ellieBubbleData from "@/stories/ellie-and-the-bubble-that-wouldnt-pop/story.json";
 import ellieDuckData from "@/stories/ellie-and-the-tiny-lost-duck/story.json";
+import ellieFireflyData from "@/stories/ellie-and-the-first-firefly/story.json";
+import ellieHiccupData from "@/stories/ellie-and-the-very-loud-hiccup/story.json";
 import pipData from "@/stories/pip-and-the-sleepy-star-parade/story.json";
 
 const BUNDLE_DATA: Record<StorySlug, StoryBundleData> = {
   "ellie-and-the-tiny-lost-duck": ellieDuckData,
   "ellie-and-the-bubble-that-wouldnt-pop": ellieBubbleData,
+  "ellie-and-the-very-loud-hiccup": ellieHiccupData,
+  "ellie-and-the-first-firefly": ellieFireflyData,
   "pip-and-the-sleepy-star-parade": pipData,
 };
 

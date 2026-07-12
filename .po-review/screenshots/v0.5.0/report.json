@@ -1,0 +1,232 @@
+{
+  "sprint": "v0.5.0",
+  "stories": {
+    "hiccup": {
+      "pageShots": [
+        {
+          "page": 1,
+          "text": "ELLIE AND THE VERY LOUD HICCUP\n\nEllie was very quiet.\n\nNext →",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-very-loud-hiccup%2Fpage01.webp&w=3840&q=75"
+        },
+        {
+          "page": 2,
+          "text": "Then — hic!\n\n←\nNext →",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-very-loud-hiccup%2Fpage02.webp&w=3840&q=75"
+        },
+        {
+          "page": 3,
+          "text": "The birds flew up!\n\n←\nNext →",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-very-loud-hiccup%2Fpage03.webp&w=3840&q=75"
+        },
+        {
+          "page": 4,
+          "text": "Hic! Hic!\n\n←\nNext →",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-very-loud-hiccup%2Fpage04.webp&w=3840&q=75"
+        },
+        {
+          "page": 5,
+          "text": "Even the grass wiggled.\n\n←\nNext →",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-very-loud-hiccup%2Fpage05.webp&w=3840&q=75"
+        },
+        {
+          "page": 6,
+          "text": "Ellie's trunk bounced!\n\nHold! 🐘\n\nTap to hold Ellie's trunk still!",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-very-loud-hiccup%2Fpage06.webp&w=3840&q=75"
+        },
+        {
+          "page": 7,
+          "text": "Hic! POP! A bubble!\n\n←\nNext →",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-very-loud-hiccup%2Fpage07.webp&w=3840&q=75"
+        },
+        {
+          "page": 8,
+          "text": "Ellie's eyes went wide.\n\n←\nNext →",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-very-loud-hiccup%2Fpage08.webp&w=3840&q=75"
+        },
+        {
+          "page": 9,
+          "text": "Then she laughed.\n\n←\nNext →",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-very-loud-hiccup%2Fpage09.webp&w=3840&q=75"
+        },
+        {
+          "page": 10,
+          "text": "The hiccups danced away.\n\n←\nThe End ✨",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-very-loud-hiccup%2Fpage10.webp&w=3840&q=75"
+        }
+      ],
+      "endingText": "✨ NEW STICKER! ✨\n\nGiggle Hiccups\n\nYou helped Ellie calm her trunk!\n\nThe End\n\nHic! Ha ha!\n\nMore stories are waiting for you.\n\nRead Again ✨\n← All Stories"
+    },
+    "firefly": {
+      "pageShots": [
+        {
+          "page": 1,
+          "text": "ELLIE AND THE FIRST FIREFLY\n\nThe sky turned soft blue.\n\nNext →",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-first-firefly%2Fpage01.webp&w=3840&q=75"
+        },
+        {
+          "page": 2,
+          "text": "Ellie sat very still.\n\n←\nNext →",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-first-firefly%2Fpage02.webp&w=3840&q=75"
+        },
+        {
+          "page": 3,
+          "text": "One tiny light.\n\n←\nNext →",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-first-firefly%2Fpage03.webp&w=3840&q=75"
+        },
+        {
+          "page": 4,
+          "text": "Then another.\n\n←\nNext →",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-first-firefly%2Fpage04.webp&w=3840&q=75"
+        },
+        {
+          "page": 5,
+          "text": "And another.\n\n←\nNext →",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-first-firefly%2Fpage05.webp&w=3840&q=75"
+        },
+        {
+          "page": 6,
+          "text": "A dance of golden sparks.\n\nGlow! ✨\n\nTap the meadow to light up!",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-first-firefly%2Fpage06.webp&w=3840&q=75"
+        },
+        {
+          "page": 7,
+          "text": "Ellie breathed wonder.\n\n←\nNext →",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-first-firefly%2Fpage07.webp&w=3840&q=75"
+        },
+        {
+          "page": 8,
+          "text": "They floated like stars.\n\n←\nNext →",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-first-firefly%2Fpage08.webp&w=3840&q=75"
+        },
+        {
+          "page": 9,
+          "text": "Ellie whispered goodnight.\n\n←\nNext →",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-first-firefly%2Fpage09.webp&w=3840&q=75"
+        },
+        {
+          "page": 10,
+          "text": "The meadow glowed goodnight.\n\n←\nThe End ✨",
+          "img": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-first-firefly%2Fpage10.webp&w=3840&q=75"
+        }
+      ],
+      "endingText": "✨ NEW STICKER! ✨\n\nGolden Glow\n\nYou lit up the firefly meadow!\n\nThe End\n\nTwinkle on, little lights.\n\nMore stories are waiting for you.\n\nRead Again ✨\n← All Stories"
+    }
+  },
+  "errors": [],
+  "homeDesktop": {
+    "text": "AdventureBox\nFor Parents\nSticker Book\nStories\nEllie Stories\nAdventures\n✨ Play Now\n🐘 Ellie Collection\nMeet Ellie\n\nA premium children's story library — four Ellie adventures, beautiful on every page.\n\nEllie and the Tiny Lost Duck\n\nAges 4–6 · 3 min read\n\nRead Story ✨\nEllie and the Bubble That Wouldn't Pop\n\nAges 4–6 · 6 min read\n\nRead Story ✨\nEllie and the Very Loud Hiccup\n\nAges 4–6 · 5 min read\n\nRead Story ✨\nEllie and the First Firefly\n\nAges 4–6 · 5 min read\n\nRead Story ✨\nBrowse Story Library →\n⭐ My Sticker Book\n\nComplete adventures to collect magical stickers. Can you collect them all?\n\nComplete an adventure to earn your first sticker!\n\n🔒\n🦄\nRainbow Helper\nComing soon...\n🔒\n🦕\nDino Explorer\nComing soon...\n🔒\n🚀\nSpace Hero\nComing soon...\n🔒\n👑\nPrincess Artist\nComing soon...\nPick your advent",
+    "imgs": [
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-tiny-lost-duck%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Tiny Lost Duck cover",
+        "w": 512,
+        "h": 341
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-bubble-that-wouldnt-pop%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Bubble That Wouldn't Pop cover",
+        "w": 512,
+        "h": 341
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-very-loud-hiccup%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Very Loud Hiccup cover",
+        "w": 512,
+        "h": 341
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-first-firefly%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the First Firefly cover",
+        "w": 512,
+        "h": 341
+      }
+    ]
+  },
+  "homeMobile": {
+    "text": "AdventureBox\n✨ Play Now\n🐘 Ellie Collection\nMeet Ellie\n\nA premium children's story library — four Ellie adventures, beautiful on every page.\n\nEllie and the Tiny Lost Duck\n\nAges 4–6 · 3 min read\n\nRead Story ✨\nEllie and the Bubble That Wouldn't Pop\n\nAges 4–6 · 6 min read\n\nRead Story ✨\nEllie and the Very Loud Hiccup\n\nAges 4–6 · 5 min read\n\nRead Story ✨\nEllie and the First Firefly\n\nAges 4–6 · 5 min read\n\nRead Story ✨\nBrowse Story Library →\n⭐ My Sticker Book\n\nComplete adventures to collect magical stickers. Can you collect them all?\n\nComplete an adventure to earn your first sticker!\n\n🔒\n🦄\nRainbow Helper\nComing soon...\n🔒\n🦕\nDino Explorer\nComing soon...\n🔒\n🚀\nSpace Hero\nComing soon...\n🔒\n👑\nPrincess Artist\nComing soon...\nPick your adventure\n\nEach box is a complete journey. Tap to begin.\n\n👑\n✨ N",
+    "imgs": [
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-tiny-lost-duck%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Tiny Lost Duck cover",
+        "w": 390,
+        "h": 260
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-bubble-that-wouldnt-pop%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Bubble That Wouldn't Pop cover",
+        "w": 390,
+        "h": 260
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-very-loud-hiccup%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Very Loud Hiccup cover",
+        "w": 390,
+        "h": 260
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-first-firefly%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the First Firefly cover",
+        "w": 390,
+        "h": 260
+      }
+    ]
+  },
+  "libraryDesktop": {
+    "text": "🐘 ELLIE COLLECTION\n\nPick a story\nEllie and the Tiny Lost Duck\n\nAges 4–6 · 3 min read\n\nRead Story ✨\nEllie and the Bubble That Wouldn't Pop\n\nAges 4–6 · 6 min read\n\nRead Story ✨\nEllie and the Very Loud Hiccup\n\nAges 4–6 · 5 min read\n\nRead Story ✨\nEllie and the First Firefly\n\nAges 4–6 · 5 min read\n\nRead Story ✨",
+    "imgs": [
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-tiny-lost-duck%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Tiny Lost Duck cover",
+        "w": 512,
+        "h": 341
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-bubble-that-wouldnt-pop%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Bubble That Wouldn't Pop cover",
+        "w": 512,
+        "h": 341
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-very-loud-hiccup%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Very Loud Hiccup cover",
+        "w": 512,
+        "h": 341
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-first-firefly%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the First Firefly cover",
+        "w": 512,
+        "h": 341
+      }
+    ]
+  },
+  "libraryMobile": {
+    "text": "🐘 ELLIE COLLECTION\n\nPick a story\nEllie and the Tiny Lost Duck\n\nAges 4–6 · 3 min read\n\nRead Story ✨\nEllie and the Bubble That Wouldn't Pop\n\nAges 4–6 · 6 min read\n\nRead Story ✨\nEllie and the Very Loud Hiccup\n\nAges 4–6 · 5 min read\n\nRead Story ✨\nEllie and the First Firefly\n\nAges 4–6 · 5 min read\n\nRead Story ✨",
+    "imgs": [
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-tiny-lost-duck%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Tiny Lost Duck cover",
+        "w": 390,
+        "h": 260
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-bubble-that-wouldnt-pop%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Bubble That Wouldn't Pop cover",
+        "w": 390,
+        "h": 260
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-very-loud-hiccup%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the Very Loud Hiccup cover",
+        "w": 390,
+        "h": 260
+      },
+      {
+        "src": "http://localhost:3460/_next/image?url=%2Fstories%2Fellie-and-the-first-firefly%2Fcover.webp&w=3840&q=75",
+        "alt": "Ellie and the First Firefly cover",
+        "w": 390,
+        "h": 260
+      }
+    ]
+  }
+}

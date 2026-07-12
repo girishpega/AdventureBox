@@ -54,7 +54,7 @@ export default function HomePage() {
                 Meet Ellie
               </Heading>
               <p className="mx-auto mb-10 max-w-2xl text-lg text-text-secondary sm:text-xl">
-                A premium children&apos;s story library — two gentle adventures,
+                A premium children&apos;s story library — four Ellie adventures,
                 beautiful on every page.
               </p>
 

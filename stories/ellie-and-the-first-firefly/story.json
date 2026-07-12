@@ -1,0 +1,31 @@
+{
+  "title": "Ellie and the First Firefly",
+  "age": "4–6",
+  "readingMinutes": 5,
+  "collection": "ellie",
+  "hero": "ellie",
+  "endMessage": "Twinkle on, little lights.",
+  "sticker": {
+    "label": "Golden Glow",
+    "description": "You lit up the firefly meadow!"
+  },
+  "pages": [
+    { "text": "The sky turned soft blue." },
+    { "text": "Ellie sat very still." },
+    { "text": "One tiny light." },
+    { "text": "Then another." },
+    { "text": "And another." },
+    {
+      "text": "A dance of golden sparks.",
+      "interaction": {
+        "prompt": "Tap the meadow to light up!",
+        "buttonLabel": "Glow! ✨",
+        "revealText": "Twinkle twinkle!"
+      }
+    },
+    { "text": "Ellie breathed wonder." },
+    { "text": "They floated like stars." },
+    { "text": "Ellie whispered goodnight." },
+    { "text": "The meadow glowed goodnight." }
+  ]
+}
