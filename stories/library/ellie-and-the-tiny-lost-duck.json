@@ -1,0 +1,54 @@
+{
+  "slug": "ellie-and-the-tiny-lost-duck",
+  "title": "Ellie and the Tiny Lost Duck",
+  "emoji": "🐘",
+  "subtitle": "A silly meadow adventure with a surprise hiding spot.",
+  "ageRange": "4–6",
+  "readingMinutes": 3,
+  "endMessage": "Quack yeah!",
+  "sticker": {
+    "emoji": "🦆",
+    "label": "Ducky Friend",
+    "description": "You helped Ellie find her tiny friend!"
+  },
+  "coverIllustrationDescription": "Ellie the elephant and a tiny yellow duckling stand together in a sunny green meadow dotted with wildflowers. Ellie smiles warmly. The duckling peeps happily at her feet.",
+  "theme": {
+    "primary": "#00B894",
+    "secondary": "#55EFC4",
+    "accent": "#FDCB6E",
+    "background": "#E8FFF8",
+    "night": "#1a4035"
+  },
+  "pages": [
+    {
+      "id": "1",
+      "text": "Ellie heard a peep.",
+      "illustrationDescription": "Sunny green meadow with rolling hills. Ellie, a gentle gray elephant with big kind eyes, lifts her head and listens. Wildflowers sway. A tiny distant 'peep' floats on the breeze."
+    },
+    {
+      "id": "2",
+      "text": "Someone was lost.",
+      "illustrationDescription": "A tiny fluffy yellow duckling sits alone near a puddle, looking small and worried. Ellie kneels down, trunk curled with care. Soft afternoon light. The meadow feels big and quiet."
+    },
+    {
+      "id": "3",
+      "text": "Where are you?",
+      "illustrationDescription": "Ellie searches the meadow — peeking behind bushes and tall grass. Butterflies flutter. The duckling is nowhere in sight. Ellie looks puzzled but hopeful.",
+      "interaction": {
+        "prompt": "Tap to help Ellie look!",
+        "buttonLabel": "Look! 👀",
+        "revealText": "Peep!"
+      }
+    },
+    {
+      "id": "4",
+      "text": "It was in her trunk!",
+      "illustrationDescription": "Funny reveal — the tiny duckling pops out of Ellie's trunk with a splash of water! Ellie looks surprised with wide eyes. The duck wears a droplet as a hat. Both look silly and delighted."
+    },
+    {
+      "id": "5",
+      "text": "Best friends!",
+      "illustrationDescription": "Ellie and the duckling walk side by side into the golden sunset, trunk and wing almost touching. Heart shapes in the clouds. Fireflies begin to twinkle. Pure joy."
+    }
+  ]
+}

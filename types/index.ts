@@ -35,3 +35,5 @@ export type {
   MazeConfig,
   PlayableAdventure,
 } from "./adventure";
+
+export type { StoryPage, PictureBook, StorySummary } from "./story";

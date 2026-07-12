@@ -25,12 +25,18 @@ export function Header() {
           </Link>
 
           <nav className="hidden items-center gap-6 sm:flex" aria-label="Main navigation">
-            <a
-              href="#themes"
+            <Link
+              href="/stories"
+              className="text-sm font-semibold text-text-secondary transition-colors hover:text-brand-primary"
+            >
+              Stories
+            </Link>
+            <Link
+              href="/#themes"
               className="text-sm font-semibold text-text-secondary transition-colors hover:text-brand-primary"
             >
               Adventures
-            </a>
+            </Link>
             <Link
               href="/adventure/princess"
               className="rounded-full bg-brand-primary px-4 py-2 text-sm font-bold text-white shadow-sm transition-transform hover:scale-105 active:scale-95"

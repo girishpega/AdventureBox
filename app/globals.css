@@ -280,6 +280,102 @@ body {
   animation: card-float 4s ease-in-out infinite;
 }
 
+@keyframes page-turn {
+  0% {
+    opacity: 0;
+    transform: perspective(800px) rotateY(-8deg) translateX(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(800px) rotateY(0deg) translateX(0);
+  }
+}
+
+.story-page-enter {
+  animation: page-turn 0.55s ease-out forwards;
+}
+
+@keyframes story-enter-forward {
+  0% {
+    opacity: 0;
+    transform: perspective(1200px) rotateY(-12deg) translateX(40px) scale(0.96);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(1200px) rotateY(0deg) translateX(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes story-enter-back {
+  0% {
+    opacity: 0;
+    transform: perspective(1200px) rotateY(12deg) translateX(-40px) scale(0.96);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: perspective(1200px) rotateY(0deg) translateX(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes story-exit {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+}
+
+@keyframes story-end-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(24px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.story-page-forward {
+  animation: story-enter-forward 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.story-page-back {
+  animation: story-enter-back 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.story-page-exit {
+  animation: story-exit 0.35s ease-in forwards;
+}
+
+.story-end-enter {
+  animation: story-end-enter 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.story-reader {
+  color-scheme: dark;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .story-page-enter,
+  .story-page-forward,
+  .story-page-back,
+  .story-page-exit,
+  .story-end-enter {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-float,
   .animate-sparkle,
