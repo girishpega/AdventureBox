@@ -41,12 +41,7 @@ export function BoxOpen({
             type="button"
             onClick={handleOpen}
             disabled={isOpening}
-            className={[
-              "relative w-full rounded-3xl transition-all duration-500 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-primary focus-visible:ring-offset-4",
-              isOpening
-                ? "animate-box-shake animate-treasure-wiggle scale-110 shadow-[0_0_40px_rgba(253,203,110,0.6)]"
-                : "animate-breathe hover:scale-105 active:scale-95",
-            ].join(" ")}
+            className="relative w-full rounded-3xl transition-shadow duration-500 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-primary focus-visible:ring-offset-4"
             style={{
               boxShadow: isOpening
                 ? `0 0 60px ${colors.accent}88`
@@ -54,7 +49,16 @@ export function BoxOpen({
             }}
             aria-label="Tap the magical treasure box to open"
           >
-            <PlaceholderIllustration theme="box" />
+            <div
+              className={[
+                "transition-transform duration-500",
+                isOpening
+                  ? "animate-box-shake animate-treasure-wiggle scale-110 shadow-[0_0_40px_rgba(253,203,110,0.6)]"
+                  : "animate-breathe hover:scale-105 active:scale-95",
+              ].join(" ")}
+            >
+              <PlaceholderIllustration theme="box" />
+            </div>
             {isOpening && (
               <>
                 <div
