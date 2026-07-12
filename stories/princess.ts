@@ -65,4 +65,69 @@ export const princessAdventure: PlayableAdventure = {
       decoration: "#74B9FF",
     },
   },
+  coloring: {
+    title: "Color the Crown!",
+    hint: "🖍 Tap each part to color Sparkles' magical crown!",
+    emoji: "👑",
+    viewBox: "0 0 200 180",
+    palette: [
+      "#FF6B6B",
+      "#FF9F43",
+      "#FECA57",
+      "#55EFC4",
+      "#48DBFB",
+      "#54A0FF",
+      "#A29BFE",
+      "#FD79A8",
+      "#E84393",
+      "#FDCB6E",
+    ],
+    regions: [
+      {
+        id: "left-spike",
+        label: "left spike",
+        path: "M 30 90 L 55 25 L 80 90 Z",
+      },
+      {
+        id: "center-spike",
+        label: "center spike",
+        path: "M 75 90 L 100 10 L 125 90 Z",
+      },
+      {
+        id: "right-spike",
+        label: "right spike",
+        path: "M 120 90 L 145 25 L 170 90 Z",
+      },
+      {
+        id: "left-jewel",
+        label: "left jewel",
+        path: "M 48 55 m -10 0 a 10 10 0 1 0 20 0 a 10 10 0 1 0 -20 0",
+      },
+      {
+        id: "center-jewel",
+        label: "center jewel",
+        path: "M 100 40 m -12 0 a 12 12 0 1 0 24 0 a 12 12 0 1 0 -24 0",
+      },
+      {
+        id: "right-jewel",
+        label: "right jewel",
+        path: "M 152 55 m -10 0 a 10 10 0 1 0 20 0 a 10 10 0 1 0 -20 0",
+      },
+      {
+        id: "band",
+        label: "crown band",
+        path: "M 25 90 L 175 90 L 165 115 L 35 115 Z",
+      },
+      {
+        id: "base",
+        label: "crown base",
+        path: "M 35 115 L 165 115 L 155 145 L 45 145 Z",
+      },
+    ],
+    outlinePaths: [
+      "M 55 25 L 48 55",
+      "M 100 10 L 100 40",
+      "M 145 25 L 152 55",
+    ],
+  },
 };

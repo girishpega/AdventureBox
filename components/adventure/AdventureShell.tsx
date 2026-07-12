@@ -5,7 +5,7 @@ import Link from "next/link";
 import type { Theme } from "@/types";
 import type { AdventurePhase } from "@/types/adventure";
 
-const PHASES: AdventurePhase[] = ["open", "story", "play", "celebrate"];
+const PHASES: AdventurePhase[] = ["open", "story", "play", "create", "celebrate"];
 
 interface AdventureShellProps {
   theme: Theme;
@@ -22,7 +22,7 @@ export function AdventureShell({
 
   return (
     <div
-      className="min-h-screen"
+      className="min-h-screen overflow-x-hidden"
       style={{ backgroundColor: theme.colors.background }}
     >
       <header style={{ backgroundColor: theme.colors.background }}>
@@ -76,7 +76,7 @@ export function AdventureShell({
         </div>
       </header>
 
-      <main className="mx-auto max-w-3xl px-4 py-4 sm:px-6 sm:py-6">
+      <main className="mx-auto max-w-3xl px-4 py-4 sm:px-6 sm:py-6 overflow-x-hidden">
         {children}
       </main>
     </div>

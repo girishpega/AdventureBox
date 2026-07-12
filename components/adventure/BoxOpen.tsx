@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { PlaceholderIllustration } from "@/components/ui/PlaceholderIllustration";
+import { enableSound, playSound } from "@/lib/sounds";
 import type { ThemeColors } from "@/types";
 
 interface BoxOpenProps {
@@ -22,6 +23,8 @@ export function BoxOpen({
 
   const handleOpen = () => {
     if (isOpening || isOpen) return;
+    enableSound();
+    playSound("boxOpen");
     setIsOpening(true);
 
     setTimeout(() => {
@@ -41,7 +44,7 @@ export function BoxOpen({
             className={[
               "relative w-full rounded-3xl transition-all duration-500 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-brand-primary focus-visible:ring-offset-4",
               isOpening
-                ? "animate-box-shake scale-110 shadow-[0_0_40px_rgba(253,203,110,0.6)]"
+                ? "animate-box-shake animate-treasure-wiggle scale-110 shadow-[0_0_40px_rgba(253,203,110,0.6)]"
                 : "animate-breathe hover:scale-105 active:scale-95",
             ].join(" ")}
             style={{

@@ -3,14 +3,20 @@ import type { StickerReward as StickerRewardType } from "@/types/adventure";
 interface StickerRewardProps {
   sticker: StickerRewardType;
   animate?: boolean;
+  flip?: boolean;
 }
 
-export function StickerReward({ sticker, animate = true }: StickerRewardProps) {
+export function StickerReward({
+  sticker,
+  animate = true,
+  flip = false,
+}: StickerRewardProps) {
   return (
     <div
       className={[
         "mx-auto rounded-[var(--radius-card)] border-4 border-dashed bg-white p-8 text-center shadow-[var(--shadow-card-hover)]",
         animate ? "animate-sticker-pop" : "",
+        flip ? "animate-sticker-flip" : "",
       ]
         .filter(Boolean)
         .join(" ")}

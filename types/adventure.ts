@@ -1,6 +1,26 @@
 import type { ThemeColors } from "./index";
 
-export type AdventurePhase = "open" | "story" | "play" | "celebrate";
+export type AdventurePhase = "open" | "story" | "play" | "create" | "celebrate";
+
+export interface ColoringRegion {
+  id: string;
+  label: string;
+  /** SVG path d attribute */
+  path: string;
+}
+
+export interface ColoringConfig {
+  title: string;
+  hint: string;
+  emoji: string;
+  /** Bright child-friendly palette (8–10 colors) */
+  palette: string[];
+  regions: ColoringRegion[];
+  /** SVG viewBox dimensions */
+  viewBox: string;
+  /** Outline paths rendered on top (not fillable) */
+  outlinePaths?: string[];
+}
 
 export interface StoryScene {
   id: string;
@@ -58,5 +78,6 @@ export interface PlayableAdventure {
   themeId: string;
   story: AdventureStory;
   maze: MazeConfig;
+  coloring: ColoringConfig;
   colors: ThemeColors;
 }

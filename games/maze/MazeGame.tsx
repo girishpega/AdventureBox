@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { enableSound, playSound } from "@/lib/sounds";
 import type { MazeGameProps, MazePosition } from "./types";
 import {
   getAdjacentPositions,
@@ -47,6 +48,8 @@ export function MazeGame({
 
       if (positionsEqual(target, goal)) {
         setCompleted(true);
+        enableSound();
+        playSound("mazeSuccess");
         setTimeout(onComplete, 1200);
       }
     },
