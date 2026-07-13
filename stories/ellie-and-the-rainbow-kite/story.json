@@ -1,0 +1,31 @@
+{
+  "title": "Ellie and the Rainbow Kite",
+  "age": "4–6",
+  "readingMinutes": 5,
+  "collection": "ellie",
+  "hero": "ellie",
+  "endMessage": "Fly on, bright friend.",
+  "sticker": {
+    "label": "Rainbow Kite",
+    "description": "You helped Ellie catch the wind!"
+  },
+  "pages": [
+    { "text": "A breeze touched Ellie's ear." },
+    { "text": "A kite sailed past — rainbow bright." },
+    { "text": "The string slipped from small paws." },
+    { "text": "\"Wait!\" Ellie ran." },
+    { "text": "The kite danced higher." },
+    {
+      "text": "The wind whooshed past.",
+      "interaction": {
+        "prompt": "Tap to feel the wind!",
+        "buttonLabel": "Whoosh! 🌬️",
+        "revealText": "Up, up, up!"
+      }
+    },
+    { "text": "A new friend held the string." },
+    { "text": "Together they flew it." },
+    { "text": "The sky blazed color." },
+    { "text": "Hope floated home." }
+  ]
+}

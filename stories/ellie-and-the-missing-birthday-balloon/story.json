@@ -1,0 +1,31 @@
+{
+  "title": "Ellie and the Missing Birthday Balloon",
+  "age": "4–6",
+  "readingMinutes": 5,
+  "collection": "ellie",
+  "hero": "ellie",
+  "endMessage": "Pop goes the party!",
+  "sticker": {
+    "label": "Birthday Balloon",
+    "description": "You caught the runaway balloon!"
+  },
+  "pages": [
+    { "text": "\"Happy birthday!\"" },
+    { "text": "One balloon floated away!" },
+    { "text": "Ellie chased it!" },
+    { "text": "Bump! Into a bush." },
+    { "text": "Peep! A bird watched." },
+    {
+      "text": "Ellie stretched tall.",
+      "interaction": {
+        "prompt": "Tap to stretch for the balloon!",
+        "buttonLabel": "Stretch! 🎈",
+        "revealText": "Almost… got it!"
+      }
+    },
+    { "text": "The string brushed her trunk." },
+    { "text": "She pulled it down!" },
+    { "text": "Everyone cheered." },
+    { "text": "Joy sparkled everywhere." }
+  ]
+}

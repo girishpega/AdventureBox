@@ -1,0 +1,87 @@
+{
+  "sprint": "v0.7.0",
+  "brand": "WonderBerry",
+  "screenshots": [
+    {
+      "name": "01-homepage-desktop",
+      "path": ".po-review/screenshots/v0.7.0/01-homepage-desktop.png",
+      "url": "/"
+    },
+    {
+      "name": "02-homepage-mobile",
+      "path": ".po-review/screenshots/v0.7.0/02-homepage-mobile.png",
+      "url": "/"
+    },
+    {
+      "name": "03-library-desktop",
+      "path": ".po-review/screenshots/v0.7.0/03-library-desktop.png",
+      "url": "/stories"
+    },
+    {
+      "name": "04-library-mobile",
+      "path": ".po-review/screenshots/v0.7.0/04-library-mobile.png",
+      "url": "/stories"
+    },
+    {
+      "name": "05-story05-cover",
+      "path": ".po-review/screenshots/v0.7.0/05-story05-cover.png",
+      "url": "/stories/ellie-and-the-rainbow-kite"
+    },
+    {
+      "name": "06-story05-page1",
+      "path": ".po-review/screenshots/v0.7.0/06-story05-page1.png",
+      "url": "/stories/ellie-and-the-rainbow-kite"
+    },
+    {
+      "name": "05-story06-cover",
+      "path": ".po-review/screenshots/v0.7.0/05-story06-cover.png",
+      "url": "/stories/ellie-and-the-sleepy-little-cloud"
+    },
+    {
+      "name": "06-story06-page1",
+      "path": ".po-review/screenshots/v0.7.0/06-story06-page1.png",
+      "url": "/stories/ellie-and-the-sleepy-little-cloud"
+    },
+    {
+      "name": "05-story07-cover",
+      "path": ".po-review/screenshots/v0.7.0/05-story07-cover.png",
+      "url": "/stories/ellie-and-the-missing-birthday-balloon"
+    },
+    {
+      "name": "06-story07-page1",
+      "path": ".po-review/screenshots/v0.7.0/06-story07-page1.png",
+      "url": "/stories/ellie-and-the-missing-birthday-balloon"
+    },
+    {
+      "name": "05-story08-cover",
+      "path": ".po-review/screenshots/v0.7.0/05-story08-cover.png",
+      "url": "/stories/ellie-and-the-tiny-unicorn"
+    },
+    {
+      "name": "06-story08-page1",
+      "path": ".po-review/screenshots/v0.7.0/06-story08-page1.png",
+      "url": "/stories/ellie-and-the-tiny-unicorn"
+    },
+    {
+      "name": "05-story09-cover",
+      "path": ".po-review/screenshots/v0.7.0/05-story09-cover.png",
+      "url": "/stories/ellie-and-the-brave-little-raindrop"
+    },
+    {
+      "name": "06-story09-page1",
+      "path": ".po-review/screenshots/v0.7.0/06-story09-page1.png",
+      "url": "/stories/ellie-and-the-brave-little-raindrop"
+    },
+    {
+      "name": "07-story05-interaction",
+      "path": ".po-review/screenshots/v0.7.0/07-story05-interaction.png",
+      "url": "/stories/ellie-and-the-rainbow-kite"
+    },
+    {
+      "name": "09-mobile-reader-story05",
+      "path": ".po-review/screenshots/v0.7.0/09-mobile-reader-story05.png",
+      "url": "/stories/ellie-and-the-rainbow-kite"
+    }
+  ],
+  "errors": []
+}

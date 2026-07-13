@@ -1,0 +1,31 @@
+{
+  "title": "Ellie and the Brave Little Raindrop",
+  "age": "4–6",
+  "readingMinutes": 5,
+  "collection": "ellie",
+  "hero": "ellie",
+  "endMessage": "Courage shines bright.",
+  "sticker": {
+    "label": "Rainbow Drop",
+    "description": "You cheered on the bravest raindrop!"
+  },
+  "pages": [
+    { "text": "One raindrop trembled." },
+    { "text": "\"I'm scared,\" it said." },
+    { "text": "Ellie cupped her trunk." },
+    { "text": "\"You can do it.\"" },
+    { "text": "The drop took a breath." },
+    {
+      "text": "The drop wobbled at the edge.",
+      "interaction": {
+        "prompt": "Tap to help the raindrop jump!",
+        "buttonLabel": "Plip! 💧",
+        "revealText": "Splash!"
+      }
+    },
+    { "text": "Down it fell —" },
+    { "text": "Into a puddle, plip-plop!" },
+    { "text": "Sun broke through." },
+    { "text": "A rainbow arched wide." }
+  ]
+}

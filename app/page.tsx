@@ -90,7 +90,7 @@ export default function HomePage() {
                 Meet Ellie
               </Heading>
               <p className="mx-auto max-w-xl text-lg text-text-secondary">
-                Four beautiful stories about a little elephant with a big heart.
+                Nine beautiful stories about a little elephant with a big heart.
               </p>
             </div>
 

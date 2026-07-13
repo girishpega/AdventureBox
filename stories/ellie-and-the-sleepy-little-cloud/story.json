@@ -1,0 +1,31 @@
+{
+  "title": "Ellie and the Sleepy Little Cloud",
+  "age": "4–6",
+  "readingMinutes": 5,
+  "collection": "ellie",
+  "hero": "ellie",
+  "endMessage": "Sweet dreams, little cloud.",
+  "sticker": {
+    "label": "Sleepy Cloud",
+    "description": "You tucked in the cloudiest friend!"
+  },
+  "pages": [
+    { "text": "A tiny cloud yawned." },
+    { "text": "It curled beside Ellie." },
+    { "text": "So soft. So warm." },
+    { "text": "The cloud drifted low." },
+    { "text": "Ellie patted it gently." },
+    {
+      "text": "The cloud sighed softly.",
+      "interaction": {
+        "prompt": "Tap to help the cloud sleep!",
+        "buttonLabel": "Shhh… ☁️",
+        "revealText": "Zzz… zzz…"
+      }
+    },
+    { "text": "Cotton-puff pillows." },
+    { "text": "Stars peeked through." },
+    { "text": "Ellie closed her eyes." },
+    { "text": "Peaceful sleep." }
+  ]
+}

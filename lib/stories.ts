@@ -5,10 +5,15 @@ import path from "path";
 import { ELLIE_STORY_SLUGS, STORY_SLUGS, type StorySlug } from "@/stories/index";
 import type { StoryBundle, StoryBundleData, StorySummary } from "@/types/story";
 
+import ellieBalloonData from "@/stories/ellie-and-the-missing-birthday-balloon/story.json";
 import ellieBubbleData from "@/stories/ellie-and-the-bubble-that-wouldnt-pop/story.json";
+import ellieCloudData from "@/stories/ellie-and-the-sleepy-little-cloud/story.json";
 import ellieDuckData from "@/stories/ellie-and-the-tiny-lost-duck/story.json";
 import ellieFireflyData from "@/stories/ellie-and-the-first-firefly/story.json";
 import ellieHiccupData from "@/stories/ellie-and-the-very-loud-hiccup/story.json";
+import ellieKiteData from "@/stories/ellie-and-the-rainbow-kite/story.json";
+import ellieRaindropData from "@/stories/ellie-and-the-brave-little-raindrop/story.json";
+import ellieUnicornData from "@/stories/ellie-and-the-tiny-unicorn/story.json";
 import pipData from "@/stories/pip-and-the-sleepy-star-parade/story.json";
 
 const BUNDLE_DATA: Record<StorySlug, StoryBundleData> = {
@@ -16,6 +21,11 @@ const BUNDLE_DATA: Record<StorySlug, StoryBundleData> = {
   "ellie-and-the-bubble-that-wouldnt-pop": ellieBubbleData,
   "ellie-and-the-very-loud-hiccup": ellieHiccupData,
   "ellie-and-the-first-firefly": ellieFireflyData,
+  "ellie-and-the-rainbow-kite": ellieKiteData,
+  "ellie-and-the-sleepy-little-cloud": ellieCloudData,
+  "ellie-and-the-missing-birthday-balloon": ellieBalloonData,
+  "ellie-and-the-tiny-unicorn": ellieUnicornData,
+  "ellie-and-the-brave-little-raindrop": ellieRaindropData,
   "pip-and-the-sleepy-star-parade": pipData,
 };
 

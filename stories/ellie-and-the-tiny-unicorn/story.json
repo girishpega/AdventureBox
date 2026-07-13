@@ -1,0 +1,31 @@
+{
+  "title": "Ellie and the Tiny Unicorn",
+  "age": "4–6",
+  "readingMinutes": 5,
+  "collection": "ellie",
+  "hero": "ellie",
+  "endMessage": "Dream on, dreamer.",
+  "sticker": {
+    "label": "Tiny Unicorn",
+    "description": "You found the sparkliest friend!"
+  },
+  "pages": [
+    { "text": "A sparkle in the grass." },
+    { "text": "A horn no bigger than a pea." },
+    { "text": "\"Hello,\" whispered Ellie." },
+    { "text": "Magic dust shimmered." },
+    { "text": "The unicorn pranced." },
+    {
+      "text": "The horn glowed pink.",
+      "interaction": {
+        "prompt": "Tap the tiny horn to sparkle!",
+        "buttonLabel": "Sparkle! ✨",
+        "revealText": "Shimmer shimmer!"
+      }
+    },
+    { "text": "Flowers bloomed rainbow." },
+    { "text": "Clouds turned cotton-candy pink." },
+    { "text": "The world felt dreamy." },
+    { "text": "Imagination never fades." }
+  ]
+}
