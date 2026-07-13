@@ -21,6 +21,12 @@ export interface StoryBundleData {
   endMessage?: string;
   sticker?: StorySticker;
   pages: StoryPage[];
+  /** Optional per-story publishing overrides (inherits from publisher/ by default) */
+  publishing?: {
+    isbn?: string;
+    edition?: string;
+    seriesNumber?: number;
+  };
 }
 
 export interface StoryBundle extends StoryBundleData {

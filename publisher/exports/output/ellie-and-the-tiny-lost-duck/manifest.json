@@ -1,0 +1,104 @@
+{
+  "version": "0.8.1",
+  "slug": "ellie-and-the-tiny-lost-duck",
+  "title": "Ellie and the Tiny Lost Duck",
+  "exportedAt": "2026-07-13T02:12:38.569Z",
+  "exportPageCount": 12,
+  "websiteStoryPageCount": 5,
+  "exportSequence": [
+    {
+      "type": "cover",
+      "title": "Ellie and the Tiny Lost Duck",
+      "text": null
+    },
+    {
+      "type": "text",
+      "title": "Copyright",
+      "text": "Copyright © 2026 WonderBerry Publishing\n\nAll rights reserved.\n\nNo part of this b"
+    },
+    {
+      "type": "text",
+      "title": "About WonderBerry",
+      "text": "WonderBerry Publishing creates premium picture books for children ages 4–6.\n\nEve"
+    },
+    {
+      "type": "text",
+      "title": "About Ellie",
+      "text": "Ellie is a little elephant with a big heart.\n\nShe lives in a warm, gentle world "
+    },
+    {
+      "type": "story",
+      "title": "Page 1",
+      "text": "Ellie heard a peep."
+    },
+    {
+      "type": "story",
+      "title": "Page 2",
+      "text": "Someone was lost."
+    },
+    {
+      "type": "story",
+      "title": "Page 3",
+      "text": "Peep!"
+    },
+    {
+      "type": "story",
+      "title": "Page 4",
+      "text": "It was in her trunk!"
+    },
+    {
+      "type": "story",
+      "title": "Page 5",
+      "text": "Best friends!"
+    },
+    {
+      "type": "text",
+      "title": "The End",
+      "text": "Quack yeah!\n\nThe End\n\nThank you for reading with WonderBerry.\n\nWonderBerry Publi"
+    },
+    {
+      "type": "text",
+      "title": "The Ellie Collection",
+      "text": "Nine beautiful stories about a little elephant with a big heart.\n\n| # | Title |\n"
+    },
+    {
+      "type": "text",
+      "title": "Edition",
+      "text": "WonderBerry Publishing  \nPlatform version 0.8.1  \nStory bundle 1.0\n\nPublished 20"
+    }
+  ],
+  "websiteSequence": [
+    {
+      "type": "story",
+      "title": "Page 1",
+      "text": "Ellie heard a peep."
+    },
+    {
+      "type": "story",
+      "title": "Page 2",
+      "text": "Someone was lost."
+    },
+    {
+      "type": "story",
+      "title": "Page 3",
+      "text": "Peep!"
+    },
+    {
+      "type": "story",
+      "title": "Page 4",
+      "text": "It was in her trunk!"
+    },
+    {
+      "type": "story",
+      "title": "Page 5",
+      "text": "Best friends!"
+    }
+  ],
+  "storyTexts": [
+    "Ellie heard a peep.",
+    "Someone was lost.",
+    "Peep!",
+    "It was in her trunk!",
+    "Best friends!"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "collection": "ellie",
+  "title": "The Ellie Collection",
+  "publisher": "WonderBerry Publishing",
+  "contact": "wonderberrypublishing@gmail.com",
+  "storyCount": 9,
+  "ageRange": "4–6",
+  "language": "en-US",
+  "status": "complete",
+  "stories": [
+    { "order": 1, "slug": "ellie-and-the-tiny-lost-duck", "title": "Ellie and the Tiny Lost Duck", "pages": 5 },
+    { "order": 2, "slug": "ellie-and-the-bubble-that-wouldnt-pop", "title": "Ellie and the Bubble That Wouldn't Pop", "pages": 10 },
+    { "order": 3, "slug": "ellie-and-the-very-loud-hiccup", "title": "Ellie and the Very Loud Hiccup", "pages": 10 },
+    { "order": 4, "slug": "ellie-and-the-first-firefly", "title": "Ellie and the First Firefly", "pages": 10 },
+    { "order": 5, "slug": "ellie-and-the-rainbow-kite", "title": "Ellie and the Rainbow Kite", "pages": 10 },
+    { "order": 6, "slug": "ellie-and-the-sleepy-little-cloud", "title": "Ellie and the Sleepy Little Cloud", "pages": 10 },
+    { "order": 7, "slug": "ellie-and-the-missing-birthday-balloon", "title": "Ellie and the Missing Birthday Balloon", "pages": 10 },
+    { "order": 8, "slug": "ellie-and-the-tiny-unicorn", "title": "Ellie and the Tiny Unicorn", "pages": 10 },
+    { "order": 9, "slug": "ellie-and-the-brave-little-raindrop", "title": "Ellie and the Brave Little Raindrop", "pages": 10 }
+  ],
+  "totalStoryPages": 85,
+  "keywords": ["Ellie", "elephant", "picture book", "bedtime stories", "children", "WonderBerry", "premium"],
+  "amazonCategories": ["JUV010000", "JUV019000"]
+}

@@ -1,0 +1,108 @@
+{
+  "version": "0.8.1",
+  "agent": "Export Validation Reviewer (18)",
+  "slug": "ellie-and-the-tiny-lost-duck",
+  "reviewedAt": "2026-07-13T02:12:45.505Z",
+  "overall": "PASS",
+  "summary": {
+    "pass": 15,
+    "hold": 0,
+    "warn": 0
+  },
+  "checks": [
+    {
+      "name": "Story text parity (website vs export vs bundle)",
+      "status": "PASS",
+      "detail": "5 pages match"
+    },
+    {
+      "name": "Story page order",
+      "status": "PASS",
+      "detail": "Pages: 1, 2, 3, 4, 5"
+    },
+    {
+      "name": "Publisher pages in export",
+      "status": "PASS",
+      "detail": "Copyright, About WonderBerry, About Ellie, The End, The Ellie Collection, Edition"
+    },
+    {
+      "name": "Output file: printable.pdf",
+      "status": "PASS",
+      "detail": "/Users/girishmalleboyena_1/AdventureBox/AdventureBox-1/publisher/exports/output/ellie-and-the-tiny-lost-duck/printable.pdf"
+    },
+    {
+      "name": "Output file: paperback-interior.pdf",
+      "status": "PASS",
+      "detail": "/Users/girishmalleboyena_1/AdventureBox/AdventureBox-1/publisher/exports/output/ellie-and-the-tiny-lost-duck/paperback-interior.pdf"
+    },
+    {
+      "name": "Output file: paperback-cover.pdf",
+      "status": "PASS",
+      "detail": "/Users/girishmalleboyena_1/AdventureBox/AdventureBox-1/publisher/exports/output/ellie-and-the-tiny-lost-duck/paperback-cover.pdf"
+    },
+    {
+      "name": "Output file: hardcover-cover-mock.pdf",
+      "status": "PASS",
+      "detail": "/Users/girishmalleboyena_1/AdventureBox/AdventureBox-1/publisher/exports/output/ellie-and-the-tiny-lost-duck/hardcover-cover-mock.pdf"
+    },
+    {
+      "name": "Output file: kindle.epub",
+      "status": "PASS",
+      "detail": "/Users/girishmalleboyena_1/AdventureBox/AdventureBox-1/publisher/exports/output/ellie-and-the-tiny-lost-duck/kindle.epub"
+    },
+    {
+      "name": "Output file: kindle-cover.jpg",
+      "status": "PASS",
+      "detail": "/Users/girishmalleboyena_1/AdventureBox/AdventureBox-1/publisher/exports/output/ellie-and-the-tiny-lost-duck/kindle-cover.jpg"
+    },
+    {
+      "name": "Output file: manifest.json",
+      "status": "PASS",
+      "detail": "/Users/girishmalleboyena_1/AdventureBox/AdventureBox-1/publisher/exports/output/ellie-and-the-tiny-lost-duck/manifest.json"
+    },
+    {
+      "name": "Printable PDF page count",
+      "status": "PASS",
+      "detail": "12 pages (expected 12)"
+    },
+    {
+      "name": "Paperback interior page count",
+      "status": "PASS",
+      "detail": "12 pages"
+    },
+    {
+      "name": "Kindle EPUB spine count",
+      "status": "PASS",
+      "detail": "12 items (expected 12)"
+    },
+    {
+      "name": "Metadata title",
+      "status": "PASS",
+      "detail": "Ellie and the Tiny Lost Duck"
+    },
+    {
+      "name": "Illustration assets present",
+      "status": "PASS",
+      "detail": "All 5 pages + cover"
+    }
+  ],
+  "exportComparison": {
+    "website": {
+      "storyPages": 5,
+      "includesPublisherPages": false
+    },
+    "printablePdf": {
+      "pages": 12,
+      "includesPublisherPages": true
+    },
+    "paperbackInterior": {
+      "pages": 12,
+      "trim": "8.5×8.5 in"
+    },
+    "kindleEpub": {
+      "pages": 12,
+      "layout": "fixed"
+    },
+    "contentParity": "PASS — story text identical across formats"
+  }
+}

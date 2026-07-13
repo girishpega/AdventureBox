@@ -1,0 +1,22 @@
+{
+  "name": "WonderBerry Publishing",
+  "brand": "WonderBerry",
+  "legalName": "WonderBerry Publishing",
+  "contact": {
+    "email": "wonderberrypublishing@gmail.com"
+  },
+  "tagline": "Little Stories. Big Wonder.",
+  "mission": "Premium picture books where every illustration is treated as art — never cropped, never distorted.",
+  "website": "https://wonderberry.app",
+  "copyrightHolder": "WonderBerry Publishing",
+  "version": "0.8.0",
+  "collections": {
+    "ellie": {
+      "title": "The Ellie Collection",
+      "hero": "Ellie",
+      "storyCount": 9,
+      "ageRange": "4–6",
+      "status": "complete"
+    }
+  }
+}

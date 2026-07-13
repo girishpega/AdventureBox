@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0",
+  "publisher": "WonderBerry Publishing",
+  "contact": "wonderberrypublishing@gmail.com",
+  "title": "{{title}}",
+  "subtitle": "{{subtitle}}",
+  "series": {
+    "name": "The Ellie Collection",
+    "number": "{{seriesNumber}}"
+  },
+  "author": "WonderBerry Publishing",
+  "illustrator": "WonderBerry Publishing",
+  "language": "en-US",
+  "ageRange": "4–6",
+  "keywords": ["picture book", "bedtime", "Ellie", "elephant", "children", "WonderBerry"],
+  "description": "{{description}}",
+  "categories": {
+    "amazonBisac": ["JUV010000", "JUV019000"],
+    "kindleCategory": "Children's eBooks > Animals > Elephants"
+  },
+  "isbn": {
+    "paperback": "{{isbnPaperback}}",
+    "hardcover": "{{isbnHardcover}}",
+    "kindle": "{{isbnKindle}}"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "recommendedTrimSize": "8.5x8.5",
+  "alternativeTrimSizes": ["8x10", "8.25x8.25", "7x10"],
+  "pictureBookRecommendation": {
+    "trimSize": "8.5x8.5",
+    "rationale": "Square format preserves 3:2 landscape interior art with generous whitespace margins. Industry standard for premium picture books."
+  },
+  "bleed": {
+    "inches": 0.125,
+    "mm": 3.2,
+    "note": "Required on top, bottom, and outside edges when bleed is enabled. Not on inside/gutter edge."
+  },
+  "interiorMargins": {
+    "source": "https://kdp.amazon.com/en_US/help/topic/GVBQ3CMEQW3W2VL6",
+    "gutterByPageCount": [
+      { "pages": "24–150", "insideMarginInches": 0.375 },
+      { "pages": "151–300", "insideMarginInches": 0.5 },
+      { "pages": "301–500", "insideMarginInches": 0.625 },
+      { "pages": "501–700", "insideMarginInches": 0.75 },
+      { "pages": "701–828", "insideMarginInches": 0.875 }
+    ],
+    "outsideTopBottomNoBleed": 0.25,
+    "outsideWithBleed": 0.375,
+    "recommendedSafeZone": 0.5
+  },
+  "resolution": {
+    "printMinimumDpi": 300,
+    "kindleCoverRecommended": { "width": 2560, "height": 1600, "ratio": "1.6:1" },
+    "kindleCoverMinimumLongestSide": 1000
+  },
+  "colorSpace": {
+    "printRecommended": "CMYK (US Web Coated SWOP v2)",
+    "printAccepted": "sRGB",
+    "kindle": "sRGB IEC61966-2.1"
+  },
+  "fileFormats": {
+    "paperbackInterior": "PDF",
+    "paperbackCover": "PDF or TIFF",
+    "hardcoverInterior": "PDF",
+    "hardcoverCover": "PDF or TIFF",
+    "kindleInterior": "EPUB (reflowable or fixed-layout)",
+    "kindleCover": "JPEG or TIFF"
+  },
+  "maxFileSizeMb": {
+    "print": 650,
+    "kindleCover": 50
+  },
+  "spineWidthFormula": {
+    "whitePaper": "pageCount × 0.002252 inches",
+    "creamPaper": "pageCount × 0.0025 inches"
+  },
+  "coverCalculator": "https://kdp.amazon.com/cover-calculator",
+  "pageCountLimits": {
+    "paperbackBw": { "min": 24, "max": 828 },
+    "paperbackColor": { "min": 24, "max": 828 },
+    "hardcover": { "min": 75, "max": 550 }
+  }
+}

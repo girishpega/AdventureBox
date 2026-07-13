@@ -1,0 +1,139 @@
+{
+  "version": "0.8.0",
+  "reviewedAt": "2026-07-13T02:13:20.882Z",
+  "stories": [
+    {
+      "slug": "ellie-and-the-tiny-lost-duck",
+      "status": "WARN",
+      "issues": [
+        "INFO: Story #1 has no sticker.webp (legacy)"
+      ],
+      "assets": {
+        "cover": {
+          "width": 1536,
+          "height": 1024,
+          "aspectRatio": 1.5
+        },
+        "pages": 5,
+        "sticker": false
+      }
+    },
+    {
+      "slug": "ellie-and-the-bubble-that-wouldnt-pop",
+      "status": "PASS",
+      "issues": [],
+      "assets": {
+        "cover": {
+          "width": 1024,
+          "height": 1536,
+          "aspectRatio": 0.6666666666666666
+        },
+        "pages": 10,
+        "sticker": true
+      }
+    },
+    {
+      "slug": "ellie-and-the-very-loud-hiccup",
+      "status": "PASS",
+      "issues": [],
+      "assets": {
+        "cover": {
+          "width": 1536,
+          "height": 1024,
+          "aspectRatio": 1.5
+        },
+        "pages": 10,
+        "sticker": true
+      }
+    },
+    {
+      "slug": "ellie-and-the-first-firefly",
+      "status": "PASS",
+      "issues": [],
+      "assets": {
+        "cover": {
+          "width": 1536,
+          "height": 1024,
+          "aspectRatio": 1.5
+        },
+        "pages": 10,
+        "sticker": true
+      }
+    },
+    {
+      "slug": "ellie-and-the-rainbow-kite",
+      "status": "PASS",
+      "issues": [],
+      "assets": {
+        "cover": {
+          "width": 1024,
+          "height": 1536,
+          "aspectRatio": 0.6666666666666666
+        },
+        "pages": 10,
+        "sticker": true
+      }
+    },
+    {
+      "slug": "ellie-and-the-sleepy-little-cloud",
+      "status": "PASS",
+      "issues": [],
+      "assets": {
+        "cover": {
+          "width": 1024,
+          "height": 1536,
+          "aspectRatio": 0.6666666666666666
+        },
+        "pages": 10,
+        "sticker": true
+      }
+    },
+    {
+      "slug": "ellie-and-the-missing-birthday-balloon",
+      "status": "PASS",
+      "issues": [],
+      "assets": {
+        "cover": {
+          "width": 1024,
+          "height": 1536,
+          "aspectRatio": 0.6666666666666666
+        },
+        "pages": 10,
+        "sticker": true
+      }
+    },
+    {
+      "slug": "ellie-and-the-tiny-unicorn",
+      "status": "PASS",
+      "issues": [],
+      "assets": {
+        "cover": {
+          "width": 1024,
+          "height": 1536,
+          "aspectRatio": 0.6666666666666666
+        },
+        "pages": 10,
+        "sticker": true
+      }
+    },
+    {
+      "slug": "ellie-and-the-brave-little-raindrop",
+      "status": "PASS",
+      "issues": [],
+      "assets": {
+        "cover": {
+          "width": 1024,
+          "height": 1536,
+          "aspectRatio": 0.6666666666666666
+        },
+        "pages": 10,
+        "sticker": true
+      }
+    }
+  ],
+  "summary": {
+    "pass": 8,
+    "hold": 0,
+    "warn": 1
+  }
+}

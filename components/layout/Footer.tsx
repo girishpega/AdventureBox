@@ -52,7 +52,10 @@ export function Footer() {
           </nav>
 
           <p className="text-sm text-text-muted">
-            © {new Date().getFullYear()} WonderBerry. All rights reserved.
+            © {new Date().getFullYear()} WonderBerry Publishing. All rights reserved.
+          </p>
+          <p className="text-xs text-text-muted">
+            wonderberrypublishing@gmail.com
           </p>
         </div>
       </Container>

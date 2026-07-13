@@ -443,4 +443,22 @@ Commit
 
 ---
 
+## Publishing Track (v0.8.0 — Active)
+
+Content creation is frozen. The Ellie Collection (9 stories) is complete.
+
+```
+Illustration Integrity Reviewer (17) ──HOLD──→ asset fix
+    ↓ PASS
+Print Production Director (11) — parallel
+Platform Engineer — website
+    ↓
+Product Owner — publishing release
+```
+
+Agent 17: [`17_illustration_integrity_reviewer.md`](./17_illustration_integrity_reviewer.md)  
+Publishing workspace: [`publisher/README.md`](../publisher/README.md)
+
+---
+
 *AdventureBox Creative Workflow · v0.3.1 · Awaiting Product Owner review*

@@ -3,7 +3,7 @@
 **Codename:** Print Production Director  
 **Authority:** Print-ready output (PDF, KDP, physical specs)  
 **Reports to:** Creative Director (visual quality), Product Owner (print SKU scope)  
-**Status:** **INACTIVE** — documented for future use. See activation thresholds in [`docs/AGENT_FRAMEWORK.md`](../docs/AGENT_FRAMEWORK.md).
+**Status:** **ACTIVE** — activated v0.8.0 Publishing Edition. See [`agents/17_illustration_integrity_reviewer.md`](./17_illustration_integrity_reviewer.md) for artwork gates.
 
 ---
 

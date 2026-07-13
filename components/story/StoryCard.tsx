@@ -15,14 +15,15 @@ export function StoryCard({ story, size = "default" }: StoryCardProps) {
     <article className="hover-lift group flex h-full flex-col overflow-hidden rounded-3xl bg-surface-white shadow-[var(--shadow-card)] ring-1 ring-black/[0.03]">
       <div
         className={[
-          "relative w-full shrink-0 overflow-hidden",
-          isLarge ? "aspect-[4/3]" : "aspect-[16/10]",
+          "relative w-full shrink-0 overflow-hidden bg-[#FFF8F0]",
+          isLarge ? "aspect-[3/4]" : "aspect-[3/4]",
         ].join(" ")}
       >
         <StoryBundleImage
           src={coverUrl(story.slug)}
           alt={`${story.title} cover`}
-          className="h-full transition-transform duration-500 group-hover:scale-[1.02]"
+          className="h-full transition-transform duration-500 group-hover:scale-[1.01]"
+          fit="contain"
           priority
         />
       </div>

@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "publish:recover-masters": "node publisher/scripts/recover-masters.mjs",
+    "publish:export-gold": "node publisher/scripts/export-gold-master.mjs",
+    "publish:validate": "node publisher/scripts/validate-exports.mjs",
+    "publish:integrity": "node publisher/scripts/review-illustration-integrity.mjs",
+    "publish:pipeline": "npm run publish:recover-masters && npm run publish:export-gold && npm run publish:validate"
   },
   "dependencies": {
     "next": "16.2.10",
@@ -21,6 +26,9 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
+    "jszip": "^3.10.1",
+    "pdf-lib": "^1.17.1",
+    "sharp": "^0.35.3",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
